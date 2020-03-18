@@ -28,7 +28,7 @@ public class POCNLUProcessDiego {
 		general.put("ACESSO",
 				new String[] { " acess", " entrada", "entrar", "entrou", " entra ", "entrando", " saída", " porta ",
 						"portal", "portaria", "portao", "gateway", " bloque", " chave", " fechadura", "abertura",
-						"impedimento", " barrar", "barrado", "barrou", " muro ", " cofre ", "liberdade", "credencia", "adentrar" });
+						"impedimento", " barrar", "barrado", "barrou", " muro ", " cofre ", "liberdade", "credencia", "adentrar", " emancipa " });
 
 		general.put("AGRUPAMENTO",
 				new String[] { "colecao", "conjunto", "grupo", "equipe", " unir ", "exercito", "contingente",
@@ -52,26 +52,33 @@ public class POCNLUProcessDiego {
 						"clinica ", "analise clinica", "soropositiv", "soronegativ" });
 
 		general.put("ANIMAL",
-				new String[] { "animal", "animais", "bicho", "fera", "besta", "selvagem", "doméstic", "cativeiro",
+				new String[] { "'", "animais", "bicho", "fera", "besta", "selvagem", "doméstic", "cativeiro",
 						"jaula", " ave ", "pássaro", "peixe", "anfíbio", "réptil", " zoo", "orgânic", "elefante",
 						"baleia", "rinoceronte", "cavalo", "girafa", "hipopótamo", "tubarão", "golfinho", "touro",
 						"búfalo", "leão", "tigre", "vaca", " boi ", " gado ", "bufalo", "cobra ", " porco", "suino",
-						"suina", "equino", "equina" });
+						"suina", "equino", "equina", "cetaceos", "cetacea" });
 
 		general.put("ANTROPOLOGIA",
 				new String[] { "hominideo", "antropo", "homo-sapiens", "anthropos", " human", "preconceito",
 						"etnocentrismo", "sociologia", "psicologia", "linguist", "etnolog", "direitos humanos",
 						"holocausto", "separatis", "xenofob", " ego" });
+		
+		general.put("ARQUITETURA",
+				new String[] { "arquitet", " casa ", "predio", "edifício", "pirâmide", "zigurati", "palácio", "sobrado",
+						"catedral", "monastério", "arranha céu", "castelo", "fortaleza", " forte de ", "templo", " cabana "
+						," oca "});
 
 		general.put("ARTE",
 				new String[] { " arte ", "musica", "pintura", "poesia", " dança", " canto", "escultura", "teatro",
 						"cinema", "escrita", "literatura", "espetáculo", "show", "artista", " ator ", " atriz ",
 						" cantor ", " interpret", "expressao", "gravura" });
+		
 
-		general.put("ARQUITETURA",
-				new String[] { "arquitet", " casa ", "predio", "edifício", "pirâmide", "zigurati", "palácio", "sobrado",
-						"catedral", "monastério", "arranha céu", "castelo", "fortaleza", " forte de ", "templo" });
+		general.put("BANCO_DADOS", new String[] {"SQL", "banco de dado", " DML ", "database", " ORM ", "objeto relacional", "DDL"
+				, " procedure", " trigger" ," ETL", "SGBD", "modelo em rede", "modelo hierarquico", "modelo fisico", "modelo conceitual"
+				, "ACID", "Atomicidade", " begin", "transaction", "Big data", "Business inteligence", " BI ", "(BI)"});
 
+		
 		general.put("BRINCAR",
 				new String[] { " brinca", " sorri", " corre", " esconde", " suar ", " diversao", " divertir",
 						" passa tempo", " jogos ", "partida", " game ", "gamefication", " jogo ", "humor", "recreio",
@@ -100,19 +107,11 @@ public class POCNLUProcessDiego {
 
 		general.put("CALCADO",
 				new String[] { "calçado", "sapato", "sandália", "chinel", "tênis", "tamanco", "mocacim", "alpercata" });
+		
 		general.put("CALCULO",
 				new String[] { "derivada", "integral", "limite ", "linha curva", " área ", "equacao", "raíz quadrada",
 						"potencia", "derivac", "logarit", "polinomi", "matriz", "determinante", " grau ", "régua",
 						"infinito", "infines", " tende a" });
-
-		general.put("CAMPO", new String[] { " campo", "fazenda", "sítio", "gado", "rebanho", "interior", "chácara",
-				"cercado", "ribeir", "campestre", "rural", "vaqueiro", "vaquejada", "cavalo", "carroça", "engenho",
-				"cercado", "curral", "rebanho", "estrada de barro", "jumento", "burro", " asno ", "calinha", "frango",
-				"granja", "cocheira", "pilao", "moinho", "vacaria", "boiadeir", " peao ", "pocilga", " roça", "pomar",
-				" orta ", "canavial", "colheita", "safra", "plantio", "estacao das chuvas", "festa junina",
-				"agricultor", "caipira", "trator", " arado", "enchada", " pá ", "ciscador", " foice ", " machado ",
-				"motoserra", " viola", "sertao", "sertanejo", "chapeu de palha", "Jibao", " arreio", " chicote",
-				"chibata", "colhedeira", "agranomo", "cooperativa", " rodeio" });
 
 		general.put("CAMADAS_TERRA",
 				new String[] { "núcleo", "mágma", "crostra", "atmosfer", "ionosfera", "mesosfera", "manto superior",
@@ -130,10 +129,11 @@ public class POCNLUProcessDiego {
 						"motorista", "ignicao", "banco do passageiro", "banco do motorista", "passageiro", });
 
 		general.put("CASA",
-				new String[] { "casa", " lar ", " morada", " morador", " morar", "residência", "cabana", "castelo",
-						"caverna", "palafita", " óca ", "abrigo", "habitat", " sala ", " quarto ", " cama ", " mesa ",
+				new String[] { "casa", " lar ", " morada", " morador", " morar", "residência",
+						 "palafita", "abrigo", "habitat", " sala ", " quarto ", " cama ", " mesa ",
 						" banheiro", " cadeira ", " garagem ", " cômodo ", " telhado ", " telha ", " porao ",
-						"fogão" });
+						"fogão", " toca ", " caperte ", " capacho ", " travesseiro ", " lencol "," guarda roupa ", " sotao ",
+						" tapete ", "janela", " portao "});
 
 		general.put("CELULA_ORGANICA",
 				new String[] { "carioteca", "membrana", "cromossôm", "genét", " dna ", "enzima", " rna ", "proteica",
@@ -167,7 +167,7 @@ public class POCNLUProcessDiego {
 						"esfirra", "geleia", "manteiga", "queij", "nutri" });
 
 		general.put("COMIDA_REGIONAL",
-				new String[] { "doce", "queijo", "comida regional", "tapioca", "cuscuz", "prato", "culinária local",
+				new String[] { " doce ", "queijo", "comida regional", "tapioca", "cuscuz", "prato", "culinária local",
 						"culinária regional", "feij", "arroz", "milho", "mandioca", "pizza", "bolo de ", "prato de " });
 
 		general.put("COMERCIO",
@@ -221,12 +221,12 @@ public class POCNLUProcessDiego {
 						"axonio", "neuronio", "corporal", "corporeo", " corpo ", "cortex", "podes ", "podo ", " cranio " });
 
 		general.put("CORPOS_CELESTES",
-				new String[] { "estrela", "planeta", "asteroide", "lua ", "buraco negro", "constela", "galáxia",
+				new String[] { "estrela", "planeta", "asteroide", "lua ", "constela", "galáxia",
 						"estelar", "massivo", "telescópio", "astrono", "órbita", "gravidade", "gravit", "eclipse",
-						" cometa ", " marte ", " planeta terra " });
+						" cometa ", " marte ", " planeta terra " , " sol ", " buraco negro ", " supernova "});
 
 		general.put("CRUSTACEO", new String[] { "crustace", "carapaca", "invertebrado", "placton", "bentonic",
-				"branchiura", "cirripedia", "artropode", "rimipedia", "cuticula", "parafiletico", "monofiletico", });
+				"branchiura", "cirripedia", "artropode", "rimipedia", "cuticula", "parafiletico", "monofiletico", " poliqueta " });
 
 		general.put("CULTURA", new String[] { "laser", "folclo", "religi", "comida", "costum", "regional", "popular",
 				" cultura ", "cultural", "culturais", "tradic", "carnaval", "reveillon", "cantiga" });
@@ -239,7 +239,7 @@ public class POCNLUProcessDiego {
 		general.put("DIMENSAO", new String[] { "dimensão", "altura", "largura", "espess", "profund", "peso",
 				"comprimento", "tamanho", " medidas", "metria", "metric" });
 
-		general.put("DINOSSAURO", new String[] { "dinossauro", "ssauro", "jurássico", "ssaurídeo" });
+		general.put("DINOSSAURO", new String[] { "dinossauro", "ssauro", "jurássico", "ssaurídeo", " dinossauria " });
 
 		general.put("DIFICULDADE", new String[] { " duro ", " dificil", " dificul", " complica", "desgastante",
 				" facil", " simpl", "trabalhos", " esforç", "hercule", "possível" });
@@ -264,13 +264,14 @@ public class POCNLUProcessDiego {
 				"doença", "clínic", "bactér", "fungo", "fungi", "parasit", "patogên", "mutila", "ameba", "paramerci",
 				"terapia", "terapico", "terapeuta", "coccus ", "aids", "cancer", "tuberculo", "gripe", "resfrriado",
 				"dor de cabeca", "feber", "vomito", "nausea", "falta de hapetite", "indisposic", "cancasso", "fraquesa",
-				"cefaleia", "contagi", "hipertensao", "candida", "diabet", "diarrei", "dosagem", "conjuntiv", "micose" });
+				"cefaleia", "contagi", "hipertensao", "candida", "diabet", "diarrei", "dosagem", "conjuntiv", "micose", "necrose",
+				"hpv", "hiv"});
 
 		general.put("DOENCA_TERAPIA", new String[] { "insulina", "antidepressiv", "antitermico", "antibiotico",
 				"corticoide", "analgesico", "quimio", "radioterapi", "anti" });
 
 		general.put("DROGA",
-				new String[] { "droga", "alucin", "maconha", "craque", "cocaina", "tráfico", "trafica", "psicoativ",
+				new String[] { "droga", "alucin", "maconha", "crack", "cocaina", "tráfico", "trafica", "psicoativ",
 						"opiáceos", "substancia", "tabaco", "nicotina", " opio ", "papoula", "cannabis",
 						"principio ativo", "sintetica", "SVS/MS 344/98", "depressivo", "depressor", "estimula",
 						"dependente quimico", "dependencia quimica" });
@@ -279,12 +280,13 @@ public class POCNLUProcessDiego {
 				new String[] { "economia", "gasto", "economic", " PIB ", " bancos ", "superavit", "defict",
 						"balança comercial", "taxa de juro", "banco central", "inflacao", "superavit primario",
 						"imposto", "aliquota" });
-
+		
+		
 		general.put("EDIFICACAO",
 				new String[] { " piso ", "assoalho", " teto ", "elevador", "parede", "tijolo", "laje", "treliça",
-						" viga ", " pilar ", "elevador", "heliponto", "mesanino", "escadaria", "corta fogo", "pilar",
-						"janela", "fachada", "luminária", "pedreiro", " reboco ", "azulejo", " ceramic", " ceramist",
-						"tapete", "carpete", "tomada eletrica", "camara" });
+						" viga ", " pilar ", "heliponto", "mesanino", "escadaria", "corta fogo",
+						 "fachada", "luminária", "pedreiro", " reboco ", "azulejo", " ceramic", " ceramist",
+						"tomada eletrica", "camara" });
 
 		general.put("EMPRESA", new String[] { "sócio", " dono ", "fundador", "capital", "lucro", "prejuízo", "balanço",
 				"corporacao", "corporati", "fluxo de caixa", "hierarqui", "companhia " });
@@ -521,6 +523,13 @@ public class POCNLUProcessDiego {
 				new String[] { "tabela periódica", "ligação metalica", " iônic", " octeto", " atomic",
 						"elemento químic", "valencia ", "gás nobre", "ligacoes quimicas", " metal", " ametal",
 						" cation", " anion", " catodo", " anodo" });
+		
+		general.put("LINGUAGEM_PROGRAMACAO", new String[] {"linguagem de ",  "compila",  "código de maquina", "binário", "algoritmo",
+				"lógica", "codigo binario", "codigo compilado", "escrita de codigo", "codificacao", " UML ", "JSON", "XML", "html", 
+				" SOA ", " GIT ", "versionamento", " Agile ", "WaterFall", "application", " TDD ", " BDD ", "teste unitario", 
+				"unit test", "cluster", "normaliza", "teste integra", "e2e", "multiplataforma", "crossplataforma", 
+				"linguagem funcional", "orientacao a aspecto", "procedural", "REST ", "W3C",
+				 " boolean", " boleano ", "framework", " lib ", " java",  " API "});
 
 		general.put("LIQUIDO",
 				new String[] { "aqua", "água", "aquos", "húmid", "soluve", "solven", "solver ", "dilui", " gota ",
@@ -534,7 +543,8 @@ public class POCNLUProcessDiego {
 		general.put("LOCAL",
 				new String[] { "condomínio", " rua ", "bairro", " cidade ", "município", "distrito", " ilha ",
 						" estado ", "país", " região ", "continente", "continental", " local ", "municipa", "estadua",
-						" federa", "aldeia", "arquipelago", "povoado", "interior", "urbano" });
+						" federa", "aldeia", "arquipelago", "povoado", "interior", "urbano",
+						" lugar ", " espaco ", " zona "});
 
 		general.put("LUTA", new String[] { "esforço", " luta", "guerra", "conflito", "arma ", " tiro ", "bomba",
 				"confronto", "enfrenta", " baixa", " comando" });
@@ -549,7 +559,8 @@ public class POCNLUProcessDiego {
 						"geometria", "calcul", "algebr", "axioma", "deducao", "deduz", "euclid", "numero", "kepler",
 						"fracoes", "matematic" });
 		general.put("MATERIAL_ESCOLAR", new String[] { "caneta", "lápis", "caderno", "borracha", "livro", "mochila",
-				" farda ", "bilbio", "compasso", "regua", "apontador", "mochila", "papel" });
+				" farda ", "regua", "apontador", "mochila", "papel", " cola ", " tesoura ", " estojo " 
+				, " corretivo ", " lapis de cor ", " esquadro ", " transferidor ", " compasso "});
 
 		general.put("MATERIAIS", new String[] { "ferro", " aço ", "bronze", " cobre ", "chumbo", "níquel", "matériais",
 				"óleo", "couro", "plastico", "resina", "alumin", "miner", "polimeto", "polipropileno", "mercurio" });
@@ -562,10 +573,11 @@ public class POCNLUProcessDiego {
 		general.put("MEMBROS",
 				new String[] { "bícep", "tricep", "panturrilha", "joelho", "antebraço", "perna", "cintura", "braço",
 						"cotovel", "calcanh", "tíbia", "tornozel", " dedo ", " dedos ", " unha", "falange", "femur",
-						"tibia", "cotovelo" });
+						"tibia", "cotovelo", "membro superior", "membro inferior", "membros superiores", "membros inferiores",
+						" superior", " inferior"});
 
 		general.put("MOLUSCO", new String[] { "molusco", "ostra", "caramujo", "polvo", " lula", "ventosa", "manto",
-				"caracol", "caracois", "gastropode", "cefalopode", "radula", "bivalve", "escafopode", "malacologia" });
+				"caracol", "caracois", "gastropode", "cefalopode", "radula", "bivalve", "escafopode", "malacologia", " mollusca " });
 
 		general.put("MOVIMENTO", new String[] { " corre", " anda", " parar", "veloz", " lent", "rápid", "viagem",
 				"viaj", "acelera", "continu", "nadar", "voar", "vôo", "desloca", "movel ", " mover ", " mexe" });
@@ -584,9 +596,10 @@ public class POCNLUProcessDiego {
 		general.put("NIVEL_ENSINO", new String[] { "ensino básico", "ensino fundamental", "ensino médio", "universi",
 				" mestr", " graduac", "especializa", "doutor" });
 
-		general.put("NUMERO", new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" });
+		general.put("NUMERO", new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"});
 
 		general.put("OCEANO", new String[] { "atlântico", "indico", "pacífico", "artico", "glacial" });
+		
 		general.put("ONDULATORIA", new String[] { "propagar", "propagacao", "propagado", "eletromagne", "dimensional",
 				" vibra", "longitu", "transvers", " corda", " vácuo", "comprimento de onda" });
 
@@ -595,10 +608,10 @@ public class POCNLUProcessDiego {
 						"retifica", "ajust", "corrig", " fila ", "enfileira", "agenda", "planeja", "BPMS", " BPM ",
 						"gerente", "coordena", "administra", "relatorio" });
 
-		general.put("ORIENTAO_OBJETOS",
+		general.put("ORIENTACAO_OBJETOS",
 				new String[] { " POO ", "orientacao a objeto", "tipo de variável", "polimorfismo", "encapsulamento",
 						" atributo", "instancia", " estatico", "método acessor", " geter", " seter", "interface",
-						"superclasse", "subclasse" });
+						"superclasse", "subclasse" ,"classe pai", "classe filha", "heranca "});
 
 		general.put("ORIGEM", new String[] { "copia", "clone", "clona", "gemeo", "xerox", "origina", "origem" });
 
@@ -649,12 +662,16 @@ public class POCNLUProcessDiego {
 						"sonho", "deduz", "criar", "criativ", "fantasi", "realidade", "pensar", "pensamento", "ilusio",
 						"ilusor", "ilusao", "acredita", "crenca", " pensador", " pensa ", " sonha", "mental" });
 		
+		general.put("PLANETA",
+				new String[] { " terra ", " marte ", " vênus ", " mercurio ", " plutao ", " netuno ", " saturno ", " urano "
+						, " jupiter "});
 
 		general.put("PLANO",
 				new String[] { "planejar", "pdca", "organizar", "prever", "medir", "controle", "estratég", "recurso",
 						"execucao", "esquema", "reuniao", "planejame", "roadmap", "acompanhamen", "scrum", "burningdown",
 						"diagrama de pareto", "project", "relatorio", "orcamento", "budget", "orcado",
 						"cumprimento de meta"});
+		
 		
 
 		general.put("PLANTA",
@@ -705,7 +722,7 @@ public class POCNLUProcessDiego {
 		general.put("PRISAO",
 				new String[] { "preso", "julga", "pena ", "penal", "condena", "presídi", "cadeia", " cela ", "captura",
 						"algema", "encarcera", "prision", "penitenci", "delegacia", "detetive", "detetado", " confina",
-						"condena" });
+						"condena", " prender " });
 
 		general.put("PROBLEMAS_HUMANOS", new String[] { "fome", "extinca", "consumis", "guerra", "desigualdade",
 				"pobre", "marginal", "polui", "sujeira", "lixo", "degradacao", "contamina", "tolerancia", " paz " });
@@ -735,15 +752,16 @@ public class POCNLUProcessDiego {
 				new String[] { "químic", "átomo", "atomi", "elétron", "próton", "mistura", "reação", "composto",
 						"ácido ", "ácida ", "acidez", " alcalin", "básico", "eletró", "óxid", "quimica inorganica",
 						"quimica organica", "alquimia", "pedra filosofal", "amino", "carbon", "carboidrato", "destila",
-						"decanta" });
+						"decanta", " neutron ", " ion " , " cation ", " anion " , " catodo ", " anodo "});
 
 		general.put("REACAO_QUIMICA",
 				new String[] { " agente ", " reagente ", "composicao quimica", "molecula", "endotermic", "esotermic",
 						"lavoisier", " prost ", " dalton ", " valencia ", "isobaro", "isotopo", "isotono",
-						"balanceamento", "decomposicao", "oxireducao", "cataliza", "oxigen" });
+						"balanceamento", "decomposicao", "oxireducao", "cataliza", "oxigen", " 1° membro ", " 2° membro " });
 
-		general.put("REDES_SOCIAIS", new String[] { "facebook", "twitter", "linkedin", "instagran", "youtube",
-				"snapchat", "orkut", "rede social", "redes sociais", "midias sociais", "midia social" });
+		general.put("REDES_SOCIAIS", new String[] { "facebook", "twitter", "linkedin", "instagram", "youtube",
+				"snapchat", "orkut", "rede social", "redes sociais", "midias sociais", "midia social", " whatsapp ", " tinder "
+				, " skype ", " facebook messenger"});
 
 		general.put("REFEICAO_SUPRIMENTO",
 				new String[] { "janta", "almoç", "refei", "comer", "aliment", "comida", "digest", "fritura", "fastfood",
@@ -763,6 +781,15 @@ public class POCNLUProcessDiego {
 
 		general.put("REINOS_ANIMAIS", new String[] { " animalia", " protista", " monera", "fungi", "plantae",
 				"carnivoro", "onivoro", "reino animal" });
+		
+		general.put("RURAL", new String[] { " campo", "fazenda", "sítio", "gado", "rebanho", "interior", "chácara",
+				"cercado", "ribeir", "campestre", "rural", "vaqueiro", "vaquejada", "cavalo", "carroça", "engenho",
+				"cercado", "curral", "rebanho", "estrada de barro", "jumento", "burro", " asno ", "calinha", "frango",
+				"granja", "cocheira", "pilao", "moinho", "vacaria", "boiadeir", " peao ", "pocilga", " roça", "pomar",
+				" orta ", "canavial", "colheita", "safra", "plantio", "estacao das chuvas", "festa junina",
+				"agricultor", "caipira", "trator", " arado", "enchada", " pá ", "ciscador", " foice ", " machado ",
+				"motoserra", " viola", "sertao", "sertanejo", "chapeu de palha", "Jibao", " arreio", " chicote",
+				"chibata", "colhedeira", "agranomo", "cooperativa", " rodeio" });
 
 		general.put("SAUDE", new String[] { "saúde", "saudável", "curado", "forte", "bem-estar", "vacina", "robust",
 				"medic", "enfermeir" });
@@ -777,9 +804,9 @@ public class POCNLUProcessDiego {
 
 		general.put("SEXO",
 				new String[] { "reprodução", "reprodut", "sexo", " coito", "relação sexual", "acasala", "cortejo",
-						"macho", "fêmea", "gestação", "gravid", " prazer", " fornica", " mascul", " femini", " parto ",
+						"macho", "fêmea", "gestação", "gravides", " gravida ", " prazer", " fornica", " mascul", " femini", " parto ",
 						" nascimento ", "fecunda", "fecundo", " ovulo", "espermatozoide", " feto", "hermafrodita",
-						"abort", "sexua" });
+						"abort", "sexua", " engravidar " , " engravid" });
 
 		general.put("SELECAO", new String[] { "escolha", "filtr", " selec", " selet", " individu", " descart",
 				" despres", " separa", " catalog" });
@@ -797,13 +824,13 @@ public class POCNLUProcessDiego {
 		general.put("SENTIMENTO",
 				new String[] { "medo", "raiva", "alegria", "frustra", "eufori", "pavor", "esperanç", "afeto", "afeti",
 						"afeic", "apego", "carinho", "despres", "depress", "desist", "trist", "ódio", "fobia", "averss",
-						"Amor", "feliz", "bondos", "benig", "malign", "sentimento", "sentir" });
+						"Amor", "feliz", "bondos", "benig", "malign", "sentimento", "sentir", " emocao ", "emocion" });
 
 		general.put("SISTEMA_BUSCA",
 				new String[] { "google", "yahoo", "altavista", "motor de busca", "indexação", "noSQL", "grafo", "busca",
 						"pesquisa", "indexa", "bigquery", "hype ", "solr ", "LUCENE", "weekpedia", "buscador",
 						"motor de pesquisa", "sistema de busca", " bing ", "Lycos", " A9 ", "web crawler", " FTP ",
-						"bibliotecono", " SIRI ", "recuperacao da informacao", "Research", "Analysis" });
+						"bibliotecono", " SIRI ", "recuperacao da informacao", "Research", "Analysis", " cortana " });
 
 		general.put("SISTEMA_OPERACIONAL",
 				new String[] { "linux", "windows", "macos", "solaris", "fucshia", "android", " IOS ", " badaos ",
@@ -815,15 +842,13 @@ public class POCNLUProcessDiego {
 		general.put("SISTEMA_SOCIAL", new String[] { "capitalis", "comunis", "nazis", "facis", "feudalis", "escravis",
 				"asiático", "socialis", "primitivo", "mercantil", });
 
-		general.put("SOFTWARE", new String[] { "linguagem de ", "software", "testes", "compila", "código", "binário",
-				"algoritmo", "lógica", "SQL", "banco de dado", "mobile", "linguagem", " DML ", " UML ", "informação",
-				"framework", "biblioteca", " lib ", "programa", "aplicativo", "modelagem", "virtual", "JSON", "arquivo",
-				"XML", "html", " SOA ", " GIT ", "versionamento", " Agile ", "WaterFall", "app ", "application",
-				"relacional", " TDD ", " BDD ", "teste unitario", "unit test", "cluster", "normaliza", "teste integra",
-				"e2e", "multiplataforma", "crossplataforma", "linguagem funcional", "oritacao a aspecto", "procedural",
-				"objeto relacional", " ORM ", "persistencia", "REST ", "W3C", "development", "developer", " java" });
-
-		general.put("SOM",
+		general.put("SOFTWARE", new String[] {"software", "teste de software", "mobile",   "tecnologia de informação",
+				"programa de computador", "aplicativo", "modelagem de software", "virtual",  "arquivo",
+				 "app ",  "relacional", "development", "developer", });
+		
+		
+		
+	general.put("SOM",
 				new String[] { "onda sonora", "sonoridade", "barrulh", "falante", "fones", "sonar", "morcego", " eco ",
 						"reverbe", "grave", "agudo", "timbre", "distorção", "mixagem", "masteriza", "equaliza",
 						"compress", "amplifica", " sinal ", "ruido", "silenci", "calar", "calado", " mudo ", " surdo ",
@@ -837,7 +862,7 @@ public class POCNLUProcessDiego {
 		general.put("CAPACIDADE",
 				new String[] { "diferencia", "espontâne", "prodige", "gênio", "genial", "capacidade", "facilidade",
 						" nato ", " inato ", "expert", "competen", "qualifica", "cursar", "perito", "pericia", "habil",
-						"experiente", "experiencia", "aperfeicoa", "competente", "desempenho", });
+						"experiente", "experiencia", "aperfeicoa", "competente", "desempenho", " craque " });
 
 		general.put("TECNOLOGIA", new String[] { "tecnologi", "foguete", "espacial", " nasa ", "celular",
 				"desenvolvimento", "técnica", " novo ", "inova", "metodo", "bluetooth" });
@@ -859,7 +884,7 @@ public class POCNLUProcessDiego {
 		general.put("TERRENO",
 				new String[] { "areia", "terra", "rocha", "rochos", "sediment", "terreno", "geólogo", "geologi",
 						"relevo", "planalto", "montanha", "planície", "petro", "petri", "areno", "lama", "pantano",
-						" barro ", "saibro", "argila", "argilos", "quartzo", "bauxita" });
+						" barro ", "saibro", "argila", "argilos", "quartzo", "bauxita", " caverna " });
 		general.put("TORAX", new String[] { " seio ", " mama ", "pulmão", "torax", "costas", "homoplata", "ombro",
 				"peito", "pescoço" });
 
@@ -887,7 +912,8 @@ public class POCNLUProcessDiego {
 		general.put("UTENSILIOS",
 				new String[] { " pote ", " copo ", "canec", "xicara", "balde", "barril", "tonel ", "frasco", " tubo ",
 						"kitassato", "instrumentacao", "bico de bunsen", "recipiente", " garfo ", " faca ", " colher ",
-						" talher", " pires ", " louça ", "bandeja", "escorredor", "panela", "frigideira", "calice" });
+						" talher", " pires ", " louça ", "bandeja", "escorredor", "panela", "frigideira", "calice", " objeto "
+						, " ferramentas "," ferramenta " });
 
 		general.put("VALORES",
 				new String[] { "valor", "ética", "moral", "princípio", "convic", "virtu", "hábito", "vício",
@@ -898,7 +924,8 @@ public class POCNLUProcessDiego {
 		general.put("VEGETACAO", new String[] { "floresta", "caatinga", "cerrado", "tundra", "savana", "taiga",
 				"xerofit", "mangue", "pantan", "botânic", "árvore", "samambaia", " alga ", " mata ", "vegeta" });
 
-		general.put("VENTO", new String[] { " vento ", "tornado", "furacão", "tormenta", " brisa ", "ciclone" });
+		general.put("VENTO", new String[] { " vento ", "tornado", "furacão", "tormenta", " brisa ", "ciclone", " ventania " 
+				," maresia ", " eolo ", " ar ", " moncao " , " minuano ", " vendaval ", " ventaneira ", " soprador "});
 
 		general.put("VERDADE",
 				new String[] { "certificado", "auth", "credencia", "certidão", "cartório", "tabeli", "veridic",
@@ -907,7 +934,7 @@ public class POCNLUProcessDiego {
 
 		general.put("VESTUARIO",
 				new String[] { "camisa", "shorts", "sapat", "tênis", "cueca", "calça", "sutiã", "chapéu", "boné",
-						" toca ", " meia ", "sandália", "camiseta", " terno ", "gravata", " meias ", "vesturario",
+						" touca ", " meia ", "sandália", "camiseta", " terno ", "gravata", " meias ", "vesturario",
 						"roupas", "moda", "tecido", "mochila", "algodao", " seda ", "couro", "roupa sintetica",
 						"constur", "adorno", "veste", "vesturario", "vestiment", "camufla", "joias", "malhas" });
 
