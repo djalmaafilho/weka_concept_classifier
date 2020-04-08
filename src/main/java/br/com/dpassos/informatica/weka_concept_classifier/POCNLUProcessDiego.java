@@ -24,92 +24,91 @@ public class POCNLUProcessDiego {
 
 		Map<String, String[]> general = new TreeMap<String, String[]>();
 
-		general.put("ACESSO",
-				new String[] { " acess", " entrada", "entrar", "entrou", " entra ", "entrando", " saída", " porta ",
-						"portal", "portaria", "portão", "gateway", " bloque", " chave", " fechadura", "abertura",
-						"impedimento", " barrar", "barrado", "barrou", "liberdade", "credencia", "adentrar",
-						" aproximação ", " acercamento " });
+		general.put("ACESSO", new String[] { " acess", " entrada", "entrar", "entrou", " entra ", "entrando", " saída",
+				" porta ", "portal", "portaria", "portão", "gateway", " bloque", " chave", " fechadura", "abertura",
+				"impedimento", " barrar", "barrado", "barrou", "liberdade", "credencia", "adentrar", " acercamento " });
 
 		general.put("AGRUPAMENTO",
-				new String[] { "coleção", "conjunto", "grupo", "equipe", " unir ", "exército", "contingente",
-						"coletivo", "união ", "multirão", "colabora", " tropa ", " extrato", "extrati", "colegiado",
-						"coleciona", "agrupa", "coleções", "coleciona", "juntar", " ajuntar ", " associação ",
-						" partido ", " facção ", "acoplamento" });
+				new String[] { "coleção", "conjunto", "grupo", "equipe", " unir ", "contingente",
+						"coletivo", "união ", "multirão", " tropa ", " extrato", "extrati", "colegiado",
+						"agrupa", "coleções", "coleciona", "juntar", " ajuntar ", " associação ",
+						" partido ", " facção ", "acopla" });
 
 		general.put("AJUDA", new String[] { " auxíl", "ajuda", "socorr", "suporte", "help", "assiste", "assisti",
 				"servir", "colabora", " amparo ", " benefic ", " caridad " });
 
 		general.put("AGUA_PROXIMIDADE", new String[] { "nascente", " foz ", "ribeir", "litorâ", "praia", "costa",
-				"delta", "húmus", "oásis", "beira mar", "praie", "praia", " duna ", " dunas " });
+				"delta", "húmus", "oásis", "beira mar", "praie", " duna ", " dunas " });
 
 		general.put("AQUATICO",
 				new String[] { " rio ", " rios ", "riacho", " mar ", "oceano", " lago ", " lagoa ", " marinh",
 						" marítm", "afluente", "efluente", "nascente", "córrego", "abissal", "barragem", " represa ",
 						"irriga", "reservatorio", "vazao", "vazamen", "bacias", "hidrografi", " aquoso ", " hídrico ",
-						" aquática ", " aquático " });
+						" aquática ", " aquático ", "hidro" });
 
 		general.put("ANALISE_CLINICA",
 				new String[] { "clinico", "exames", "seringa", "agulha", "prontuário", "material coletado",
 						"diagnostico médico", "proagnostico", "laudo clinico", "relatorio médico", "posto de sau",
-						"clinica ", "analise clinica", "soropositiv", "soronegativ", "raio-x" });
+						"clinica ", "analise clinica", "soropositiv", "soronegativ", "raio-x", "diagnostic" });
 
 		general.put("ANALISE_LABORATORIO",
 				new String[] { "mielograma", "ressonância", "leucograma", "hemograma", "hemoglobina", "hematocrito",
 						"bacterioscopia", "antibiograma", "coprocultura", "micológico", "eritrograma",
 						"morfologia das hemácias" });
 
-		general.put("ANIMAL", new String[] { "animais", "bicho", "fera", "besta", "selvagem", "doméstic", "cativeiro",
-				"jaula", " ave ", "pássaro", "peixe", "anfíbio", "réptil", " zoo", "orgânic", "elefante", "baleia",
-				"rinoceronte", "cavalo", "girafa", "hipopótamo", "golfinho", "touro", "búfalo", "leão", "tigre", "vaca",
-				" boi ", " gado ", "bufalo", "cobra ", " porco", "suino", "suina", "equino", "equina", "cetaceos",
-				"cetacea", " bestial ", " animalidade ", "animal", "baleia", "tubarão", "cachorro", " cão ", " gato ",
-				"tubarão", "peixe-boi", "camelo", "dromedário", "abelha", "abutre", "ácaro", "águia", "albatroz",
-				"alce", "alpaca", "anaconda", "anchova", "andorinha", "anta", "antílope", "aranha", " arara ", "asno",
-				"atum", "avestruz", "babuíno", "bacalhau", "bacuri", "badejo", "bagre", "baiacu", "baleia", "barata",
-				"barbo", "barracuda", "beija-flor", "besouro", "bem-te-vi", "bezerro", "bicho-da-seda", "bisonte",
-				" boa ", "bode", "boi", "borboleta", "boto", "búfalo", "burro", "cabra", "cachalote", "cachorro",
-				"cágado", "camaleão", "camarão", "camelo", "camundongo", "canário", "canguru", "capivara", "caracol",
-				"caranguejo", "carneiro", "carrapato", "cascavel", "castor", "cavalo", "cavalo-marinho", "cegonha",
-				"centopeia", "chimpanzé", "chinchila", "chita", "cigarra", "cisne", "coala", "cobra", "codorna",
-				"coelho", "coiote", "coruja", "corvo", "crocodilo", "cupim", "cutia", "damão", "dançador", "degolado",
-				" degu ", "diablotim", "diabo-da-tasmânia", "diamante-de-gould", "dingo", "dinossauro", "dodô", "doninha",
-				"dourado", "dragão-de-komodo", "dragão-do-banhado", "dragão-voador", "dromedário", "dugongo", "égua",
-				"elefante", "elefante-marinho", "ema", "enchova", "enferrujado", "enguia", "enho", "escaravelho",
-				"escorpião", "escrevedeira", "esmerilhão", "espadarte", "esponja", "esquilo", "estorninho",
-				"estrela-do-mar", "esturjão", "faisão", "falcão", "ferreirinho", "flamingo", "flautim", " foca ",
-				"formiga", " fossa ", "fraca-da-guiné", "frango-d'água", "freirinha", "fuinha", "furão", "gafanhoto",
-				"gaivota", "galinha", " galo ", "gambá", "gamo", "ganso", "garça", "garoupa", "gato", "gavião", "gazela",
-				"geco", "gerbo", "gibão", "girafa", "girino", "gnu", "golfinho", "gorila", "gralha", "grifo", "grilo",
-				"grou", "guará", "guaxinim", "hadoque", "hamster", "harpia", "hiena", "hipopótamo", "hírax", "iaque",
-				"íbex", "íbis", "iguana", "iguanara", "impala", "indicador", "indri", "inhacoso", "inhala", "inhambu",
-				"irapuã", "irara", "iratim", "itapema", "jabiru", "jabuti", "jaçanã", "jacaré", "jacu", "jacupará",
-				"jaguar", "jamanta", "jararaca", "javali", "jegue", "jiboia", "joaninha", "joão-de-barro", "jumento",
-				"kakapo", "kea", "kinguio", "kiwi", "koala", "kookaburra", "kowari", "krill", "kudu", "lacraia",
-				"lagarta", "lagartixa", "lagarto", "lagosta", "lampreia", "lavadeira", "lavagante", "leão",
-				"leão-marinho", "lebre", "lêmure", "leopardo", "lesma", "lhama", "libélula", "lince", "linguado",
-				"lobo", "lombriga", "lontra", "lula", "macaco", "mamute", "manatim", "mandril", "mangangá", "maracanã",
-				"marimbondo", "mariposa", "marisco", "marmota", "marreco", "marta", "massarongo", "medusa", "melro",
-				"mergulhão", "merluza", "mexilhão", " mico ", "milhafre", "mineirinho", "minhoca", "mocho", "mono",
-				"morcego", "moreia", "morsa", "mosca", "mosquito", "muçurana", " mula ", "musaranho", "naja", "nambu",
-				"nandaia", "narceja", "narval", "náutilo", "negrinho", "neon", "nhacundá", "nhandiá", "niala", "niquim",
-				"noitibó", "numbat", "nútria", "ocapi", "olho-de-boi", "onça", "orangotango", " orca ", "órix",
-				"ornitorrinco", "osga", "ostra", "otária", "ouriço", "ouriço-do-mar", "ovelha", " panda ", "pantera",
-				"papagaio", "pardal", "pássaro", " pato ", "pavão", "peixe", "peixe-boi", "pelicano", "percevejo",
-				"perereca", "periquito", "pernilongo", " peru ", "pescada", "pica-pau", "pinguim", "piolho", "piranha",
-				"pirarucu", "polvo", "pombo", "pônei", "porco", "porco-espinho", "porquinho-da-índia", "preá",
-				"preguiça", "pulga", "quati", "quatimirim", "quatipuru", "quebra-nozes", "quebra-ossos", "queixada",
-				"quem-te-vestiu", "quero-quero", "quetzal", "quiriquiri", " rã ", "rabudinho", " raia ", "raposa",
-				"ratazana", "rato", "rêmora", " rena ", "rendeira", "rinoceronte", "robalo", "rouxinol", "sabiá", "sagui",
-				"salamandra", "salmão", "sanguessuga", " sapo ", "sardão", "sardinha", "saúva", "seriema", "serpente",
-				"siri", "suçuarana", "sucuri", "suiriri", "suricate", "surubi", "surucucu", "tainha", "tamanduá",
-				"tamboril", "tapir", "tarântula", "tartaruga", "tatu", "tatuí", "tentilhão", "tetra", "texugo",
-				"tico-tico", "tigre", "tilápia", "tordo", "tororó", "toupeira", "touro", "tritão", "truta", "tubarão",
-				"tucano", "tucuxi", "uacari", "unau", "unha-longa", "unicórnio", "ursopanda", " urso ", " uru ", "urubu",
-				"urutaurana", "urutu", " vaca ", "vaca-marinha", "vaga-lume", "veado", "verdilhão", "verdinho", "vespa",
-				"víbora", "vieira", "vira-bosta", "vison", "vitela", "viúva", "viúva-negra", "wallaby", "weimaraner",
-				"wombat", "xajá", "xangó", "xará", "xarelete", "xaréu", "xaru", "xauim", "xero", "xexéu", "ximango",
-				"ximburé", "xixarro", "xofrango", "xuri", "yak", "ynambu", "yorkshire", "zabelê", "zangão",
-				"zaragateiro", " zarro ", "zebra", "zebu", "zidedê", "zombeteiro", "zorrilho" });
+		general.put("ANIMAIS", new String[] { "animais", "bicho", "fera", "besta", "selvagem", "doméstic", "cativeiro",
+				" ave ", "pássaro", "peixe", "anfíbio", "réptil", " zoo", "orgânic",
+				"rinoceronte", "cavalo", "girafa", "hipopótamo", "golfinho", "touro","tigre",
+				" vaca ", " boi ", " gado ", "bufalo", "cobra ", " porco", "suino", "suina", "equino", "equina",
+				"cetaceos", "cetacea", " bestial ", " animalidade ", "animal", "baleia", " cão ",
+				" gato ", "tubarão", "camelo", "abutre", "ácaro", "águia",
+				"albatroz", "alce", "alpaca", "anaconda", "anchova", "andorinha", "anta", "antílope", "aranha",
+				" arara ", "asno", "atum", "avestruz", "babuíno", "bacalhau", "badejo", "bagre", "baiacu",
+				 "barata", "barbo", "barracuda", "beija-flor", "bem-te-vi", "bezerro",
+				"bicho-da-seda", "bisonte", " bode ", " boto ", "búfalo", "burro", "cabra", "cachalote",
+				"cachorro", "cágado", "camaleão", "camarão", " camelo ", "camundongo", "canário", "canguru", "capivara",
+				"caranguejo", "carneiro", "carrapato", "cascavel", "castor", "cavalo-marinho",
+				"cegonha", "centopeia", "chimpanzé", "chinchila", "chita", "cigarra", "cisne", "coala", "cobra",
+				"codorna", "coelho", "coiote", "coruja", "corvo", "crocodilo", "cupim", "cutia", "damão", "dançador",
+				"degolado", " degu ", "diablotim", "diabo-da-tasmânia", "diamante-de-gould", "dingo", "dinossauro",
+				"dodô", "doninha", "dragão-de-komodo", "dragão-do-banhado", "dragão-voador", "dromedário",
+				"dugongo", "égua", "elefante", "elefante-marinho", "ema", "enchova", "enferrujado", "enguia", "enho",
+				"escaravelho", "escorpião", "escrevedeira", "esmerilhão", "espadarte", "esponja", "esquilo",
+				"estorninho", "estrela-do-mar", "esturjão", "faisão", "falcão", "ferreirinho", "flamingo", "flautim",
+				" foca ", "formiga", " fossa ", "fraca-da-guiné", "frango-d'água", "freirinha", "fuinha", "furão",
+				"gafanhoto", "gaivota", "'", " galo ", " gambá ", " gamo ", " ganso ", " garça ", "garoupa",
+				"gavião", "gazela", "geco", "gerbo", "gibão", "girafa", "girino", "gnu", "golfinho", "gorila",
+				"gralha", "grifo", "grilo", "grou", "guará", "guaxinim", "hadoque", "hamster", "harpia", "hiena",
+				"hipopótamo", "hírax", "iaque", "íbex", " íbis ", "iguana", "iguanara", "impala", "indicador", "indri",
+				"inhacoso", "inhala", "inhambu", "irapuã", "irara", "iratim", "itapema", "jabiru", "jabuti", "jaçanã",
+				"jacaré", "jacu", "jacupará", "jaguar", "jamanta", "jararaca", "javali", "jegue", "jiboia", "joaninha",
+				"joão-de-barro", "jumento", "kakapo", "kea", "kinguio", "kiwi", "koala", "kookaburra", "kowari",
+				"krill", " kudu ", "lacraia", "lagarta", "lagartixa", "lagarto", "lagosta", "lampreia", "lavadeira",
+				"lavagante", " leão ", "leão-marinho", "lebre", "lêmure", "leopardo", "lesma", "lhama", "libélula",
+				"lince", "linguado", "lobo", "lombriga", "lontra", "lula", "macaco", "mamute", "manatim", "mandril",
+				"mangangá", "maracanã", "marimbondo", "mariposa", "marisco", "marmota", "marreco", "marta",
+				"massarongo", "medusa", "melro", "mergulhão", "merluza", "mexilhão", " mico ", "milhafre", "mineirinho",
+				"minhoca", " mocho ", " mono ", "morcego", "moreia", "morsa", "muçurana", " mula ",
+				"musaranho", " naja ", "nambu", "nandaia", "narceja", "narval", "náutilo", "negrinho", " neon ",
+				"nhacundá", "nhandiá", "niala", "niquim", "noitibó", "numbat", "nútria", "ocapi", "olho-de-boi",
+				" onça ", "orangotango", " orca ", " órix ", "ornitorrinco", " osga ", " ostra ", "otária", "ouriço",
+				"ouriço-do-mar", "ovelha", " panda ", "pantera", "papagaio", "pardal", " pato ", "pavão",
+                "peixe-boi", "pelicano", "percevejo", "perereca", "periquito", " peru ",
+				"pescada", "pica-pau", "pinguim", "piolho", "piranha", "pirarucu", "pombo", "pônei", "porco",
+				"porco-espinho", "porquinho-da-índia", "preá", "preguiça", "pulga", "quati", "quatimirim", "quatipuru",
+				"quebra-nozes", "quebra-ossos", "queixada", "quem-te-vestiu", "quero-quero", "quetzal", "quiriquiri",
+				" rã ", "rabudinho", " raia ", "raposa", "ratazana", "rato", "rêmora", " rena ", "rendeira",
+				"rinoceronte", "robalo", "rouxinol", "sabiá", "sagui", "salamandra", "salmão", "sanguessuga", " sapo ",
+				"sardão", "sardinha", " saúva ", "seriema", "serpente", "siri", "suçuarana", "sucuri", "suiriri",
+				"suricate", "surubi", "surucucu", "tainha", "tamanduá", "tamboril", "tapir", "tarântula", "tartaruga",
+				" tatu ", "tatuí", "tentilhão", "tetra", "texugo", "tico-tico", "tigre", "tilápia", "tordo", "tororó",
+				"toupeira","tritão", "truta",  "tucano", "tucuxi", "uacari", "unau", "unha-longa",
+				"unicórnio", "ursopanda", " urso ", " uru ", "urubu", "urutaurana", "urutu", "vaca-marinha",
+				"vaga-lume", "veado", "verdilhão", "verdinho", "vespa", "víbora", "vieira", "vira-bosta", "vison",
+				"vitela", "viúva", "viúva-negra", "wallaby", "weimaraner", "wombat", "xajá", "xangó", "xará",
+				"xarelete", "xaréu", "xaru", "xauim", "xero", "xexéu", "ximango", "ximburé", "xixarro", "xofrango",
+				"xuri", "yak", "ynambu", "yorkshire", "zabelê", "zangão", "zaragateiro", " zarro ", "zebra", "zebu",
+				"zidedê", "zombeteiro", "zorrilho" });
 
 		general.put("ANTROPOLOGIA",
 				new String[] { "hominideo", "antropo", "homo-sapiens", "anthropos", " human", "preconceito",
@@ -117,14 +116,14 @@ public class POCNLUProcessDiego {
 						"holocausto", "separatis", "xenofob", " ego" });
 
 		general.put("ARQUITETURA",
-				new String[] { "arquitet", " casa ", "predio", "edifício", "pirâmide", "zigurati", "palácio", "sobrado",
+				new String[] { "arquitetura", " casa ", "predio", "edifício", "pirâmide", "zigurati", "palácio", "sobrado",
 						"catedral", "monastério", "arranha céu", "castelo", "fortaleza", " forte de ", "templo",
-						" cabana ", " oca ", " obra ", " constru " });
+						" cabana ", " oca ", " obra ", " constru ", "arquitetônico" });
 
 		general.put("ARTE",
-				new String[] { " arte ", "musica", "pintura", "poesia", " dança", " canto", "escultura", "teatro",
-						"cinema", "escrita", "literatura", "espetáculo", "show", "artista", " ator ", " atriz ",
-						" cantor ", " interpret", "expressao", "gravura", " beleza ", " engenho " });
+				new String[] { " arte ", "musica", "pintura", " dança", " canto", "escultura", "teatro",
+						"cinema", "literatura", "espetáculo", "show", "artista", " ator ", " atriz ",
+						" cantor ", " interpret", "expressao", "gravura", " beleza ", " engenho ", "leitura" });
 
 		general.put("BANCO_DADOS",
 				new String[] { "SQL", "banco de dado", " DML ", "database", " ORM ", "objeto relacional", "DDL",
@@ -133,8 +132,8 @@ public class POCNLUProcessDiego {
 						"Big data", "Business inteligence", " BI ", "(BI)" });
 
 		general.put("BRINCAR",
-				new String[] { " brinca", " sorri", " corre", " esconde", " suar ", " diversao", " divertir",
-						" passa tempo", " jogos ", "partida", " game ", "gamefication", " jogo ", "humor", "recreio",
+				new String[] { " brinca", " sorri", " esconde", " suar ", " diversao", " divertir",
+						" passa tempo", " jogos ", " game ", "gamefication", " jogo ", "humor", "recreio",
 						"recrea", " desfrutar ", " aproveitar ", " folgar " });
 
 		general.put("BEBIDA",
@@ -142,10 +141,11 @@ public class POCNLUProcessDiego {
 						"refrigerante", "espumante", "champagne", "vinico", " líquido ", " bebes ", " alcool ",
 						" pinga " });
 
-		general.put("BICICLETA", new String[] { "catraca", "corrente", "camara de ar", " celin ", " guidão ",
-				"cabo de freio", " aro ", " pedal", "ciclis", "bicicl", "tricicl", " pneu de bicicleta " });
+		general.put("BICICLETA", new String[] { "catraca", "camara de ar", " celin ", " guidão ",
+				"cabo de freio", " aro ", " pedal", "ciclis", "tricicl", " pneu de bicicleta " });
 
-		general.put("BIOLOGIA", new String[] { " bio", "fisiolog", " vivo ", " viva ", " estudo da vida ", " vida " });
+		general.put("BIOLOGIA",
+				new String[] { " bio", "fisiolog", " vivo ", " viva ", " estudo da vida ", " vida ", "organismos" });
 
 		general.put("BOLSA_VALOR",
 				new String[] { " acionista", "bolsa de valor", "majoritário", "compra de ações", "venda de açoes",
@@ -159,7 +159,7 @@ public class POCNLUProcessDiego {
 				"labio", "cervical", "nasais", "nasal", "palat", " papila", " intelect", " racio", " crânio " });
 
 		general.put("CALCADO",
-				new String[] { "calçado", "sapato", "sandália", "chinel", "tênis", "tamanco", "mocacim", "alpercata" });
+				new String[] { "sapato", "sandália", "chinel", "tênis", "tamanco", "mocacim", "alpercata" });
 
 		general.put("CALCULO",
 				new String[] { "derivada", "integral", "limite ", " calculo ", " número ", " conta ", " contabilidade ",
@@ -173,7 +173,7 @@ public class POCNLUProcessDiego {
 						"correte de ar", "massa de ar", "correntes de ar", "nuvem", "nuvens", " maré", "superfície",
 						"emergir", "imergir" });
 
-		general.put("CANTO", new String[] { "lírico", "popular", "voz", "cantar", "cantor", "de canto ", "canto coral",
+		general.put("CANTO", new String[] { "lírico", "voz", "cantar", "cantor", "de canto ", "canto coral",
 				"ópera", "tenor", "contralto", "soprano", "barítono" });
 
 		general.put("CAPACIDADE",
@@ -183,7 +183,7 @@ public class POCNLUProcessDiego {
 
 		general.put("CARRO",
 				new String[] { "volante", "cambio", "caixa de marcha", "cinto de segurança", "odômetro", "combustível",
-						"escapamento", "bateria", "embreagem", "capô", "porta mala", "pneu", "montadora", "veicular",
+						"escapamento", "embreagem", "capô", "porta mala", "pneu", "montadora", "veicular",
 						"motorista", "ignicao", "banco do passageiro", "banco do motorista", "passageiro", " pneu ",
 						" automóvel ", " automo", " veícul" });
 
@@ -207,7 +207,7 @@ public class POCNLUProcessDiego {
 		general.put("CIENCIA", new String[] { "científico", "método científico", "hipótese", "teoria" });
 
 		general.put("CLASSE_SOCIAL", new String[] { "classe social", "rico", "pobre", "periferia", "ideologia", "rei ",
-				"escravo", "pirâmide" });
+				"escravo"});
 
 		general.put("CLASSE_ANIMAL", new String[] { "vertebrado", "invertebrado", "carnivo", "herbívoto", "mamífero",
 				"reino", " filo ", "classe", "órdem", "família", "gênero", "espécie", "simbio" });
@@ -215,16 +215,14 @@ public class POCNLUProcessDiego {
 		general.put("CLIMA", new String[] { "árido", "tropic", "equatori", "glacial", "temperad", "desert",
 				"mediterrâneo", " polar ", "sertão" });
 
-		general.put("CIDADE", new String[] { " cidade ", "capitais", "mobilidade", "urban", "lopole", "pólis",
-				"periferia", "centro", "esgoto", " coleta", "parque", "cotidian", "metropol" });
-
 		general.put("COMBUSTIVEL", new String[] { "oxido", "eletrolise", "comburente", "combust", "renovavel", " gas",
 				"oleo", "carvao", "propano", "metano", "butano", "meteno", "alcool", "diesel" });
 
 		general.put("COMIDA",
-				new String[] { "legume", "verdura", "fruta", "ortaliça", "massa", "carne", "vegetariano", "receita",
-						"culinária", "nutriente", "gordura", "lipid", "leite", "café", " pão", " bolo", "pastel",
-						"esfirra", "geleia", "manteiga", "queij", "nutri", "lipo", "levedura" });
+				new String[] { "legume", "verdura", "fruta", "massa", "carne", "vegetariano", "receita", "culinária",
+						"nutriente", "gordura", "lipid", "leite", " pão", " bolo", "pastel", "esfirra",
+						"geleia", "manteiga", "queij", "nutri", "lipo", "levedura", "hortaliça", "açúcar", "proteína",
+						"carboidrato", " mel " });
 
 		general.put("COMIDA_REGIONAL",
 				new String[] { " doce ", "queijo", "comida regional", "tapioca", "cuscuz", "prato", "culinária local",
@@ -245,20 +243,21 @@ public class POCNLUProcessDiego {
 
 		general.put("COMPORTAMENTO",
 				new String[] { "comportamento", "atitude", "impulso", " motivo ", "motivacao", "atitude ", "zelo",
-						"despres", "cuidar", "cuidado", "esqueci", "esquecer", "positividade", "coerencia",
+						"desprezo","desprezar","cuidar", "cuidado", "esqueci", "esquecer", "positividade", "coerencia",
 						"personalidade", "solidari", "razoes" });
 
 		general.put("COMPUTADOR",
-				new String[] { "computador", "mouse", "teclado", "monitor", "screen", " disk ", " tela ", "periférico",
-						"notebook", "personal computer", "main frame", "nuvem", "hard disk", "fonte de alimentação",
+				new String[] { "mouse", "teclado", "monitor", "screen", " disk ", "periférico",
+						"notebook", "personal computer", "main frame", "hard disk", "fonte de alimentação",
 						"computac" });
-		general.put("CONCLUSAO", new String[] { " feito ", " conclui", " acaba", "termina", " final", " complet",
-				"100%", "totalidade", " entregue", " aceito", " interrompi", " faltan", " vencido", " praso" });
+		general.put("CONCLUSAO",
+				new String[] { " feito ", " conclui", " acaba", "termina", " final", " complet", "100%", "totalidade",
+						" entregue", " aceito", " interrompi", " faltan", " vencido", " praso", "conclusao" });
 
 		general.put("CONTRADICAO", new String[] { " mas ", "porém", "contudo", "todavia", "no entanto", "entretanto",
-				"contrariamento", "em desacordo", "oposicao", "opositiv" });
+				"contrariamento", "em desacordo", "oposicao", "opositiv", "contra" });
 
-		general.put("CONFIRMACAO", new String[] { " Sim", " certo", " afirma", " positiv", " negativ", " é ", "ambi",
+		general.put("CONFIRMACAO", new String[] { " Sim ", " certo", " afirma", " positiv", " negativ", " é ", "ambi",
 				"confirm", "prova" });
 
 		general.put("CONTINENTES",
@@ -269,20 +268,26 @@ public class POCNLUProcessDiego {
 						" refaz", "etapa", "constitui ", "constituido", "constituir", "laboratóri", "desenvolv",
 						"confecc" });
 
-		general.put("COR", new String[] { "branc", "azul", "pret", "cinz", "verde", "amarel", "lilas", "roxo", "laranj",
-				"púrpura", "violet", "vermelh", "marron", "béje", "negro", "pigment", "color" });
+		general.put("COR",
+				new String[] { "púrpura", "violet", "vermelh", "marron", "béje","pigment", "color", "Amarel",
+						"Ametista", "Anil", "Azul", "Bege", "Bordô", "Branc",  "Cáqui", "Caramelo", "Carmesim",
+						"Carmim", "Castanho", "Chocolate", "Ciano ", "Cinz", "Cinzento", "Cobre", "Coral",
+						"Creme", "Dourado", "Escarlate", "Esmeralda", "Ferrugem", "Fúcsia", "Gelo", "Grená", "Gris",
+						"Índigo", "Jade", "Laranj", "Lavanda", "Lilás ", "Limão", "Loiro", "Magenta", "Malva", "Marfim",
+						"Marrom", "Mostarda", "Negro", "Ouro", "Prata", "Pret", "Rosa", "Roxo",
+						"Rubro", "Terracota", "Tijolo", "Turquesa", "Verde", "Vermelho", "Violeta" });
 
-		general.put("CORPO", new String[] { "cabeça", "tronco", "membro", "braço ", "perna", " mão ", "pescoço", " pé ",
+		general.put("CORPO", new String[] { "cabeça", "tronco", "membro", "braço ", " mão ", " pé ",
 				" corpo ", "abdome", "barriga", "costas", " rins ", "renal", "exofago", "estomago", "coracao", "pulmao",
 				"cardio", "cerebro", "cerebral", "pulmonar", "pulmoes", "timpano", "figado", "bexiga", "esqueleto",
-				"granio", "intestin", "pancrea", "colna cervical", "espinha dorsal", "cerebelo", "antebraco", "umbigo",
+				"intestin", "pancrea", "coluna cervical", "espinha dorsal", "cerebelo", "antebraco", "umbigo",
 				"umbilical", "placenta", "aparelho digestivo", "aparelho reprodutor", "axonio", "neuronio", "corporal",
-				"corporeo", " corpo ", "cortex", "podes ", "podo ", " cranio ", "lombar", "costela", " pulso ",
+				"corporeo", "cortex", "podes ", "podo ", " cranio ", "lombar", "costela", " pulso ",
 				"arteria", " veia ", " veias ", "vaso capilar", "vasos capilares", });
 
 		general.put("CORPOS_CELESTES",
 				new String[] { "estrela", "planeta", "asteroide", "lua ", "constela", "galáxia", "estelar", "massivo",
-						"telescópio", "astrono", "órbita", "gravidade", "gravit", "eclipse", " cometa ", " marte ",
+						"telescópio", "astrono", "órbita", "gravidade", "gravit", "eclipse", " cometa ",
 						" planeta terra ", " sol ", " buraco negro ", " supernova " });
 
 		general.put("CRUSTACEO",
@@ -290,7 +295,7 @@ public class POCNLUProcessDiego {
 						"cirripedia", "artropode", "rimipedia", "cuticula", "parafiletico", "monofiletico",
 						" poliqueta " });
 
-		general.put("CULTURA", new String[] { "laser", "folclo", "religi", "comida", "costum", "regional", "popular",
+		general.put("CULTURA", new String[] { "laser", "folclo", "religi", "costum", "regional", "popular",
 				" cultura ", "cultural", "culturais", "tradic", "carnaval", "reveillon", "cantiga" });
 
 		general.put("DESEJO", new String[] { "querer", "vontade", "desej", "pretenc", "objetiv", " alvo ", "quer ",
@@ -298,10 +303,10 @@ public class POCNLUProcessDiego {
 
 		general.put("DESIGNE_SYSTEM", new String[] { "token", " tag ", " css ", "design", "cores", "estilo", " cor " });
 
-		general.put("DIMENSAO", new String[] { "dimensão", "altura", "largura", "espess", "profund", "peso",
-				"comprimento", "tamanho", " medidas", "metria", "metric" });
+		general.put("DIMENSAO", new String[] { "altura", "largura", "espess", "profund", "peso",
+				"tamanho", " medida", "metria", "metric", "escala", "distancia" });
 
-		general.put("DINOSSAURO", new String[] { "dinossauro", "ssauro", "jurássico", "ssaurídeo", " dinossauria " });
+		general.put("DINOSSAURO", new String[] { "ssauro", "jurássico", "ssaurídeo", " dinossauria " });
 
 		general.put("DIFICULDADE", new String[] { " duro ", " dificil", " dificul", " complica", "desgastante",
 				" facil", " simpl", "trabalhos", " esforç", "hercule", "possível" });
@@ -309,23 +314,45 @@ public class POCNLUProcessDiego {
 		general.put("DOCUMENTOS_PESSOAIS",
 				new String[] { "carteira de trabalho", " CPF ", "carteira de identidade", "passaporte", " rg ",
 						"carteira nacional de habilitação", " cnh ", "carteira de estudando", "carteira de habilitacao",
-						"registro de nascimento", "reconhecimento de firma", "copia autentiticad", " CNH ", " CIC ",
+						"registro de nascimento", "reconhecimento de firma", "copia autentiticad", " CIC ",
 						" CGC ", "Certidao de negativa", "certidao de nasccimento", "comprovante de alistamento",
 						" CAM " });
 
 		general.put("DOCUMENTAR",
 				new String[] { "documento", "achado", "registro", "escrito", "fóssil", "arqueo", "arcai", "gravar",
-						"gravação", "antig", "arquitetoni", "escavacao", " paleoz", "paleobot", "paleoeco", "museu",
-						"grafia", "grafar", "registrar", "registrado", "registradas" });
+						"gravação", "antig", "escavacao", " paleoz", "paleobot", "paleoeco", "museu",
+						"grafia", "grafar", "registrar", "registrado", "registradas", "leitura" });
 
 		general.put("DOENCA", new String[] { "enfermidade", "vírus", "célula", "infecç", "acompanhamento", "doente",
-				"patologia", "remédio", "droga", " dor ", "hospital", "internar", " leito", "cirúrgia", "tratamento",
+				"patologia", "remédio", " dor ", "hospital", "internar", " leito", "cirúrgia", "tratamento",
 				"doença", "clínic", "bactér", "fungo", "fungi", "parasit", "patogên", "mutila", "ameba", "paramerci",
 				"terapia", "terapico", "terapeuta", "coccus ", "aids", "cancer", "tuberculo", "gripe", "resfriado",
 				"dor de cabeca", "febre", "vomito", "nausea", "falta de hapetite", "indisposiç", "cansaço", "fraquesa",
 				"cefaleia", "contagi", "hipertensao", "candida", "diabet", "diarrei", "dosagem", "conjuntiv", "micose",
-				"necrose", "hpv", "hiv", " asma", "atópic", "atopia", "secreção", "BCG", "inteferon", "IFN-y",
-				"hidrocefalia", "mielomeningocele", "infectado" });
+				"necrose", "hpv", "hiv", "atópic", "atopia", "secreção", "inteferon", "IFN-y", "hidrocefalia",
+				"mielomeningocele", "infectado", "estresse" });
+
+		general.put("DOENCA_TIPOS", new String[] { "Clamídia", "Gonorreia", "HPV", "Herpes", "Tricomoníase", "Sífilis",
+				" AIDS ", " Acne ", " Afta ", "Alergia", "Alzheimer", "Amebíase", "Anemia", "Anorexia", "Bipolar",
+				"Bronquite", "Bronquite Aguda", "Brucelose", "Bruxismo", "Boca Seca", "Balanite", "Cálculo Renal",
+				"Cancro", "Carcinoma", "Cárie", "Catarata", "Câncer", "Cirrose hepática", "Cistite", 
+				"Cólera", "Colesterol", "Cólica abdominal", " Coma ", "Congestão nasal", "Conjutivite", "Crupe ",
+				"Daltonismo", "Depressão", "Dermatite", "Desnutrição", "Diarreia", "Difteria", "Disfagia",
+				"Disfunção Eréctil", "Dor de dentes", "DST", "micose", "hpv", "hiv", " asma",
+				"secreção", "BCG", "inteferon", "IFN-y", "hidrocefalia", "mielomeningocele",
+				"Ejaculação precoe", "Enxaqueca", "Epilepsia", "Esclerose", "Esquizofrenia", "Esofagite", "Apendicite",
+				"Fadiga crônica", "Febre", "Faringite", "Fibroma", "Flatulência", "Foliculite", "Frieira",
+				"Fotossensibilidade", "Galactosemia", "Gastrite", "Gengivite", "Gigantismo", "Glaucoma", "Glicemia",
+				"Gota", "Gravidez Ecóptica", "Gripe", "Halitose", "Hemanginoma", "Hematomacrose", "Hemofilia",
+				"Hemorróida", "Hepatite", "Hiperglicemia", "Hipertensão", "Hipertricose", "Hipertrofia", "Hipoglicemia",
+				"Infecção urinária", "Infertilidade", "Insolação", "Insónia", "Insuficiência cardíaca",
+				"Intolerância à lactose", "Intoxicação", "Lábio leporino", "Lalofobia", "Laringite", "Lúpus", "Malária",
+				"Melanoma", "Miocardi", "Miopia", "Morte Súbita Cardíaca", "Nanismo", "Náusea", "Neuropatia",
+				"Obesidade", "Obstipação", "Osteoartrose", "Osteoporose", "Osteopetrose", "Papeira", "Paranóia",
+				"Parkinson", "Piromania", "Pneumonia", "Queimadura Solar", "Queratose", "Resfriado", "Rinite",
+				"Rubéola", "Sarampo", "Tendinite", "Tétano", "Tetraplegia", "Tiroidite", "Tosse", "Trigliceridemida",
+				"Tuberculose", "Úlcera", "Urticária", "Varicela", "Varíola", "Variz", "Verruga", "Vigorexia", "VIH",
+				"Zumbido" });
 
 		general.put("DOENCA_TERAPIA_TRATAMENTO",
 				new String[] { "insulina", "antidepressiv", "antitermico", "antibiotico", "corticoide", "analgésico",
@@ -341,7 +368,7 @@ public class POCNLUProcessDiego {
 		general.put("ECONOMIA",
 				new String[] { "economia", "gasto", "economic", " PIB ", " bancos ", "superavit", "defict",
 						"balança comercial", "taxa de juro", "banco central", "inflacao", "superavit primario",
-						"imposto", "aliquota", "banco" });
+						"imposto", "aliquota" });
 
 		general.put("EDIFICACAO",
 				new String[] { " piso ", "assoalho", " teto ", "elevador", "parede", "tijolo", "laje", "treliça",
@@ -349,38 +376,39 @@ public class POCNLUProcessDiego {
 						"pedreiro", " reboco ", "azulejo", " ceramic", " ceramist", "tomada eletrica", "camara" });
 
 		general.put("EMPRESA", new String[] { "sócio", " dono ", "fundador", "capital", "lucro", "prejuízo", "balanço",
-				"corporacao", "corporati", "fluxo de caixa", "hierarqui", "companhia ", "empresarial" });
+				"corporacao", "corporati", "fluxo de caixa", "hierarqui", "companhia ", "empresa", "cartel" });
 
 		general.put("EMPREGO",
 				new String[] { "emprego", "trabalhador", "funcionári", "jornada", "labuta", "trabalho formal",
 						"trabalho informal", "patrao", "empregado", "trabalhis", "bater ponto", "trabalhado autonomo",
 						"pessoa juridica", "CLT", "profissional", "capacitacao profissional", "contrato de trabalhao",
-						"ocupacional", "demissao", "demiti", "emprego", "carreira", "profissao", "admissao",
+						"ocupacional", "demissao", "demiti", "carreira", "profissao", "admissao",
 						"carteira assinada", "ferias", "decimo terceiro", "salario minimo", "previdencia soacial",
-						"aposenta", "tempo de serviço", "prestacao de serviço", "FGTS" });
+						"aposenta", "tempo de serviço", "prestacao de serviço", "FGTS", "INSS", "INPS", "seguridade",
+						"aposentado" });
 
 		general.put("ENERGIA",
 				new String[] { "energia cinetica", "energia potencial", "elastica", "gravitacional", "nergia termica",
 						"energia quimica", "energia eólica", "energia nuclear", "fusão", "fissão", " gerador ",
-						"nuclear" });
+						"nuclear", "radioativa", "radiação", "bateria", "acumulador" });
 
 		general.put("ENSINO",
-				new String[] { "ler", "escrever", "aprender", "professor", "escola", "faculdade", "universidade",
+				new String[] { " ler ", "escrever", "aprender", "professor", "escola", "faculdade", "universidade",
 						"aluno", "aula", "docente", "dicente", "pedago", "cogni", "profiss", "formacao", "diploma",
-						"certificado", "mentor", "leciona", "licenciatura", "cátedra", "didatic", "celegio",
+						"mentor", "leciona", "licenciatura", "cátedra", "didatic", "celegio",
 						"alfabetiza", "academi", "instrução", "informação", "compreensão", "entendimento",
-						"conhecimento", "educacionais" });
+						"conhecimento", "educacionais", "aprendizagem", "leitura", "ditado", "agogo" });
 
 		general.put("ELETRICIDADE",
-				new String[] { "enérgia", "corrente", "elétric", " volt ", " ampere ", " choque ", "bobina", " imã ",
+				new String[] { "enérgia", "elétric", " volt ", " ampere ", " choque ", "bobina", " imã ",
 						" indutor ", "indução", " capacit", " resist", "circuito", "magnét", " condut", "sensor",
-						"corrente contínua", "gauss" });
+						"corrente contínua", "gauss", "carga", "dínamo" });
 
 		general.put("ELETRICIDADE_ENGENHARIA",
 				new String[] { "transformador", "campo elétrico", "campo magnético", "tensão eletrétric", "voltagem",
 						"amperagem", "load baster", "subestação", " TC", " TP", "de corrente", "de potencia", "dieletr",
 						"inversor", "fásico", "fasor", "indução", "indutor", "isola", "de manobra", "fase",
-						"corrente contínua", "abertura de chave", "fechamento de chave", "talabarte", "para-raio",
+						"abertura de chave", "fechamento de chave", "talabarte", "para-raio",
 						"aterramento", "medidor de energia", "eletrotecnic", "eletric", "tarifa", "cabeamento", " fio ",
 						" fiacao ", " fios ", "isolante", "disjuntor", "fusível" });
 
@@ -390,17 +418,18 @@ public class POCNLUProcessDiego {
 						" diodo ", "tiristor", "digital" });
 
 		general.put("EQUIPAMENTO_SOM", new String[] { "microfone", "pedestal", "placa de som", "audio", "captador",
-				"equaliza", "fone de ouvido", "auto-falante", "auto falante", " sonda ", " sonar ", " eco" });
+				"fone de ouvido", "auto-falante", "auto falante", " sonda ", " sonar ", " eco" });
 
 		general.put("ERAS_GEOLOGICAS",
 				new String[] { "arqueozoi", "proterozoi", "paleozoi", "mezozoi", "cenozoi", "pangea",
 						"formacao dos continentes", "era do gelo", "geologica", "cretáceo", "neolit", "paleolit",
 						"mesozoic", "era glacial" });
 
-		general.put("ERGONOMIA",
-				new String[] { "ler", "lesão", "esforço", "repetitivo", "postura", "ergonômi", "fisioter" });
+		general.put("ERGONOMIA", new String[] { "lesão", "esforço", "repetitivo", "postura", "ergonômi", "fisioter",
+				"massagem", "terapia", "RPG" });
 
-		general.put("ESCRITOS", new String[] { "livro", "artigo", "revista", "jornal", "resenha", "folheto" });
+		general.put("ESCRITOS", new String[] { "livro", "artigo", "revista", "jornal", "resenha", "folheto", "corpus",
+				"biblioteca", "bibliotecário", "livraria", "filoteca" });
 
 		general.put("ESPORTE_RADICAL",
 				new String[] { " salto", " Saltar", " cair", " queda", "pular", "jogar-se", "impacto", "aceleracao",
@@ -409,12 +438,13 @@ public class POCNLUProcessDiego {
 						"bibicross", "Skate", "skatis", "Rafting", "voo livre", "Rapel", "paraquedis", "Mountain bike",
 						"Arborismo", "parkour" });
 
-		general.put("ESTACOES_ANO", new String[] { "primavera", "verão", "outono", "inverno" });
+		general.put("ESTACOES_ANO", new String[] { "primavera", "verão", "outono", "inverno", "ventania", "moncoes",
+				"estacao", "hiberna" });
 
 		general.put("ESTADOS_BRASIL",
 				new String[] { "rio grande do sul", "santa catarina", "paraná", "são paulo", "rio de janeiro",
 						"minas gerais", "curitiba", "bahia", "alagoas", "pernambuco", "paraíba", "sergipe",
-						"pernambuco", " ceará", "rio grande do norte", "tocantins", "mato grosso", "brasília",
+						"ceará", "rio grande do norte", "tocantins", "mato grosso", "brasília",
 						"maranhão", "amapá", "roraima", "amazonas", "acre", "goiás" });
 
 		general.put("ESTATISTICA",
@@ -425,8 +455,8 @@ public class POCNLUProcessDiego {
 						" envies", "estratato", "estratifica" });
 
 		general.put("ESCOLA",
-				new String[] { "escola", "sala de aula", "aula", "pátio", "merenda", "recreio", "intervalo", "diretor",
-						"coordenador", "pedagog", "secretaria", "currículo", "matérias", "disciplina", "assunto",
+				new String[] { "sala de aula", "pátio", "merenda", "intervalo", "diretor",
+						"pedagog", "secretaria", "currículo", "matérias", "disciplina", "assunto",
 						"formação", "notas", "quadro negro", "lousa", "cadeira escolar" });
 		general.put("ESPORTE",
 				new String[] { "exercício", "fisico", "atleta", "esporte", "jogo", "partida", "competição", });
@@ -457,21 +487,21 @@ public class POCNLUProcessDiego {
 						"parabéns", "confrater" });
 
 		general.put("FISICA",
-				new String[] { "dimenssão fisica", " astronom", "espaço tempo", "estado da matéria", " luz ", "ótica",
-						"óptic", " termico", "termodina", "mecânic", " potencia ", " solidos ", " gasoso",
-						"forca de atrito", " inercia", "quantidade de movimento", "Celsius", "Fahrenheit", "Kelvin",
+				new String[] { "dimensão fisica", " astronom", "espaço tempo", "estado da matéria", " luz ", "ótica",
+						"óptic", " termico", "termodina", "mecânic", " solidos ", " gasoso",
+						"forca de atrito", " inercia", "Celsius", "Fahrenheit", "Kelvin",
 						"(SI)", "sistema internacional de unidades", "termométrica", "termodinamica", "de Condução",
 						"por Condução", "Convecção", "Irradiação", "Calor sensível", "Calor latente", "dilatação",
 						"estado de agregação", "estado físico", "coeficiente de dilatação", "Dilatação linear",
 						"Dilatação superficial", "Dilatação volumétrica", "entropia", "Calor específico", " calor",
-						" frio", "fogo", " plasma ", "tempo" });
+						" frio", "fogo", " plasma ", "tempo", "dimensão", "temperatura", "movimento", "velocidade" });
 
 		general.put("FISICA_FORCA",
 				new String[] { "força eletrica", "forca aplicada", "forca sobre", "forca exercida", " aceleracao ",
-						"energia potencial", "energia cinetica", "mecânic", " potencia ", "movimento retilineo",
+						"mecânic", " potencia ", "movimento retilineo",
 						"movimento uniforme", "velocidade media", "velocidade instantanea", " trajetoria", "newton",
 						"fisica classica", "alavanca", " roldana", "algebra fasorial", "coeficiente de atrito",
-						"forca de atrito", " inercia", "quantidade de movimento" });
+						"forca de atrito", "quantidade de movimento", "força",  "potencial" });
 
 		general.put("FISICA_ONDA",
 				new String[] { "física", "frequencia de onda", " ondas ", " ondulató", "cordas", "pendulo" });
@@ -488,22 +518,22 @@ public class POCNLUProcessDiego {
 
 		general.put("FORCAS_ARMADAS",
 				new String[] { "bombeiro", "exército", "marinha", "aeronautica", "polícia militar", "polícia civil",
-						"soldado", "recruta", "coronel", "capitão", "comandante", "almirante", "major", "delegado", });
+						"soldado", "recruta", "coronel", "capitão", "comandante", "almirante", "major", "delegado", "polícia" });
 
 		general.put("FORMAS",
 				new String[] { " linha ", " círcul", " triângular", " quadrado", "pentagono", "hexagono", " cubo ",
 						" cilindr", " esferico", "conico", " toróide", "agono", "angul", " aresta", "edro ", "trapesio",
-						"paralelogramo", "paralelepidepdo", "losango", "bola", "globo", "globular", "cubico", "cubica",
-						"lineo", "linea", "superfici" });
+						"paralelogramo", "paralelepidepdo", "losango", " bola", "globo", "globular", "cubico", "cubica",
+						"lineo", "linea", "superfici", "morfo" });
 
 		general.put("FRUTA", new String[] { "Abacate", "Abacaxi", " Abiu ", "Abricó", "Abrunho", " Açaí ", "Acerola",
-				"Akee", "Alfarroba", "Ameixa", "Amêndoa", "Amora", "Ananás", "Anona", "Araçá", "Arando", "Araticum",
-				" Ata ", "Atemoia", "Avelã", "Babaco", "Babaçu", "Bacaba", "Bacuri", "Bacupari", "Banana", "Baru",
-				"Bergamota", "Biribá", "Buriti", "Butiá", "Cabeludinha", "Cacau", "Cagaita", "Caimito", "Cajá", "Caju",
+				"Alfarroba", "Ameixa", "Amêndoa", "Amora", "Ananás", "Anona", "Araçá", "Arando", "Araticum", " Ata ",
+				"Atemoia", "Avelã", "Babaco", "Babaçu", "Bacaba", "Bacuri", "Bacupari", "Banana", " Baru ", "Bergamota",
+				"Biribá", "Buriti", "Butiá", "Cabeludinha", "Cacau", "Cagaita", "Caimito", " Cajá ", " Caju ",
 				"Calabaça", "Calabura", "Calamondin", "Cambucá", "Cambuci", "Camu-camu", "Caqui", "Carambola",
 				"Carnaúba", "Castanha", "Castanha-do-pará", "Cereja", "Ciriguela", "Ciruela", " Coco ", "Cranberry",
 				"Cupuaçu", "Damasco", "Dekopon", "Dendê", "Dióspiro", "Dovyalis", "Durião", "Embaúba", "Embaubarana",
-				"Engkala", "Escropari", "Esfregadinha", "Figo", "Framboesa", "Fruta-do-conde", "Fruta-pão", "Feijoa",
+				"Engkala", "Escropari", "Esfregadinha", " Figo ", "Framboesa", "Fruta-do-conde", "Fruta-pão", "Feijoa",
 				"Figo-da-índia", "Fruta-de-cedro", "Fruta-de-lobo", "Fruta-do-milagre", "Fruta-de-tatu", "Gabiroba",
 				"Glicosmis", "Goiaba", "Granadilla", "Gravatá", "Graviola", "Groselha", "Grumixama", "Guabiju",
 				"Guabiroba", "Guaraná", "Hawthorn", "Heisteria", "Hilocéreo", "Ibacurupari", "Ilama", "Imbe", "Imbu",
@@ -513,13 +543,14 @@ public class POCNLUProcessDiego {
 				"Langsat", "Laranja-de-pacu", "Mabolo", "Maçã", "Macadâmia", "Macaúba", "Mamão", "Mamey", "Mamoncillo",
 				"Maná-cubiu", "Manga", "Mangaba", "Mangostão", "Maracujá", "Marang", "Marmelo", "Marolo", "Marula",
 				"Massala", "Melancia", "Melão", "Meloa", "Mexerica", "Mirtilo", "Morango", "Murici", "Naranjilla",
-				"Nectarina", "Nêspera", "Noni", "Noz", "Noz-pecã", "Noz-macadâmia", "Oiti", "Oxicoco", "Orangelo",
-				"Pera", "Pêssego", "Pitanga", "Pinha", "Pitaia", "Pitomba", "Pitangatuba", "Pindaíba", "Pequi",
+				"Nectarina", "Nêspera", "Noni", " Noz ", "Noz-pecã", "Noz-macadâmia", "Oiti", "Oxicoco", "Orangelo",
+				" Pera ", "Pêssego", "Pitanga", "Pinha", "Pitaia", "Pitomba", "Pitangatuba", "Pindaíba", "Pequi",
 				"Pequiá", "Physalis", "Pulasan", "Pomelo", "Pupunha", "Puçá", "Patauá", "Pajurá", "Pixirica",
-				"Pistache", "Quina", "Quiuí", "Romã", "Rambai", "Rambutão", "Rukam", "Saguaraji", "Salak", "Santol",
+				"Pistache", "Quina", "Quiuí", " Romã ", "Rambai", "Rambutão", "Rukam", "Saguaraji", "Salak", "Santol",
 				"Sapota", "Sapoti", "Sapucaia", "Saputá", "Seriguela", "Sorvinha", "Tangerina", "Tamarindo", "Tâmara",
-				"Toranja", "Tucumã", "Taiuva", "Tapiá", "Tarumã", "Tangor", "Tucujá", "Uva", "Umbu", "Uvaia", "Uchuva",
-				" Umê ", " Uxi ", "Vacínio", "Veludo", "Vergamota", "Wampi", "Xixá", "Yamamomo", "Yuzu", "Zimbro" });
+				"Toranja", "Tucumã", "Taiuva", "Tapiá", "Tarumã", "Tangor", "Tucujá", " Uva ", "Umbu", "Uvaia",
+				"Uchuva", " Umê ", " Uxi ", "Vacínio", "Veludo", "Vergamota", "Wampi", "Xixá", "Yamamomo", "Yuzu",
+				"Zimbro",  });
 
 		general.put("GENETICA",
 				new String[] { "genétic", "gameta", " mutacao", "seleção natural", " evolut", "molecula",
@@ -527,41 +558,38 @@ public class POCNLUProcessDiego {
 						" guanina", " citocina", "uracila", " amina", "congênit" });
 
 		general.put("GENITALIA_E_EROGENAS",
-				new String[] { "pênis", "vagina", "ânus", "púbis", "glúteo", " anal ", " útero ", "testículo",
-						" pubian", "genita", "vulva", "petasma", " telico ", " eroti", "mamilo", "ovário",
-						"grandes labios", "pequenos labios", "seios", "clitoris", " glande ", "prepucio",
-						"zona carnosa", "erecao", "lubrificacao", "orgasmo", "erogen", "fluido vaginal", " semen ",
-						"seminal", "pubian", "prostat", "pelvi", "trompas de falopio", "nadegas", "monte de venus",
-						"uretra", "perianal" });
+				new String[] { "pênis", "vagina", "ânus", "púbis", "glúteo", " anal ", " útero ", "testículo", "genita",
+						"vulva", "petasma", " telico ", " eroti", "mamilo", "ovário", "grandes labios",
+						"pequenos labios", "seios", "clitoris", " glande ", "prepucio", "zona carnosa", "erecao",
+						"lubrificacao", "orgasmo", "erogen", "fluido vaginal", " semen ", "seminal", "prostat", "pelvi",
+						"trompas de falopio", "nadegas", "monte de venus", "uretra", "perianal" });
 
 		general.put("GESTAO",
 				new String[] { "organizacoes", " gestão", "gerir", "gestor", " gerencia", " administrar",
 						"processo decis", "demanda", "gerente", "coordena", "chefe", "chefia", "lider", "coach",
-						"recursos humanos", " RH ", "colaborador", "funcionario" });
+						"recursos humanos", " RH ", "colaborador", "funcionario", "coordenador", });
 
 		general.put("GEOMETRIA",
 				new String[] { "pitagor", "distancia euclidi", "o ponto", "determinado ponto", " reta ", " plano carte",
-						"dimensiona", "a dimensao", " quadrado", " retangu", " triang", " cartesi", " diágon", " raio ",
+						"dimensiona", "a dimensao", " retangu", " triang", " cartesi", " diágon", " raio ",
 						" circul", " esfer", " tangen", " perpendicular", "posicao relativa", "comprimento", "area",
-						"volume", "geometri", "calculo integral", "axioma", "linha curva", "linha reta",
+						"volume", "geometri", "calculo integral", "linha curva", "linha reta",
 						"segmento de reta", "paralelismo", " angulo", " angular", " vetor", " escalar", "central",
 						"concentri" });
 
 		general.put("HIGIENE", new String[] { "banho", "escova", "pentea", "lavar", " aceio", " higia", " higien",
 				"limpesa", "limpar", "sabão", "sabonete", "limpo", "lavagem", "enxagu", "detergente", "limpador" });
 
-		general.put("HISTORIA", new String[] { " data ", "acontecimento", " evento ", " fato ", "passado", " momento ",
+		general.put("HISTORIA", new String[] { " data ", "acontecimento", " evento ", " fato ", " momento ",
 				"civiliza", "historiador", "povos", "histori", "colonial", "coloniza" });
 
-		general.put("HORA", new String[] { "minuto", "segundo", "hora", "milisegundos" });
-
 		general.put("HORTALICAS",
-				new String[] { "Abacate", "Abóbora", "Abobrinha", "Acelga", "Aipo (ou salsão)", "Alcachofra", "Alface",
-						"Alfafa", "Almeirão", "Aspargo", "Berinjela", "Bertalha", "Brócolos", "Cebola", " Alho ",
-						"Alho poró", "Cebola-roxa", "Chicória", "Chuchu", "Cogumelos", "Shiitake", " Couve ",
-						"Couve-de-bruxelas", "Couve-flor", "Couve-galega", "Endívia", "Funcho", "Escorcioneira",
-						"Espinafre", "Feijão e ervilha", "Azuki", "Brotos de feijão", " Fava ", "Guandu", "Lentilha",
-						"Feijão-preto", " Soja ", "Vagem", "Fruta-pão", "Jiló", "Maxixe", "Milho", "Pepino", "Pimentão",
+				new String[] { "Abóbora", "Abobrinha", "Acelga", "Aipo (ou salsão)", "Alcachofra", "Alface", "Alfafa",
+						"Almeirão", "Aspargo", "Berinjela", "Bertalha", "Brócolos", "Cebola", " Alho ", "Alho poró",
+						"Cebola-roxa", "Chicória", "Chuchu", "Cogumelos", "Shiitake", " Couve ", "Couve-de-bruxelas",
+						"Couve-flor", "Couve-galega", "Endívia", "Funcho", "Escorcioneira", "Espinafre",
+						"Feijão e ervilha", "Azuki", "Brotos de feijão", " Fava ", "Guandu", "Lentilha", "Feijão-preto",
+						" Soja ", "Vagem", "Fruta-pão", "Jiló", "Maxixe", "Milho", "Pepino", "Pimentão",
 						"Pimenta-verde", "Pimenta-vermelha", "Jalapeño", "Malagueta", "Páprica", "Quiabo",
 						"Ora-pro-nóbis", "Batata", "Batata-doce", "Beterraba", "Cenoura", "Gengibre", "Inhame",
 						"Jícama", "Mandioca", "aipim", " Nabo ", "Rabanete", "Rábano", "Repolho", "Rúcula", "Rutabaga",
@@ -580,14 +608,14 @@ public class POCNLUProcessDiego {
 						"setor primário", "bens de consumo", "materia-prima", "bens duráveis", "bens semi-duráveis",
 						"bens não-duráveis", "taylor", "ford", "toyot" });
 
-		general.put("INFORMATICA", new String[] { "designe", "algorítmo", " lógica de", "computação", "informatica",
-				"aplicativo", "sistema computa", "processamento" });
+		general.put("INFORMATICA", new String[] { "designe", "algorítmo", "computação", "informatica",
+				 "sistema computa", "processamento" });
 
 		general.put("INFORMATICA_SUPORTE", new String[] { "wireless", "roteador", " LAN ", " WAN ", "hardware",
 				"periférico", "internet", "computador", "drive", "blowfish", "online", "web" });
 
 		general.put("INTELIGENCIA_ARTIFICIAL",
-				new String[] { "rede neural", "deep learning", "aprendizado de máquina", "big data", "data mining",
+				new String[] { "rede neural", "deep learning", "aprendizado de máquina", "data mining",
 						"analytics", "machine learning", "redes neurais", "multicamada", "aprendizado profundo",
 						"classificação", "predicao", "clusterizacao", "supervisionado", "por reforco", "reinforcement",
 						"classificador", " label ", "markov", "confusion matrix", "matriz de confusao", "acurácia",
@@ -596,16 +624,30 @@ public class POCNLUProcessDiego {
 		general.put("INSTRUMENTO_MEDICAO", new String[] { "calibra", "exatidao", "precisao", "resolucao",
 				"equipamento padrao", "erro de paralaxe", "medidor digital", "medidor eletromecanico", "analogico" });
 
-		general.put("INSTRUMENTO_MUSCIAL", new String[] { "corda", "sopro", "percurssão", "melodia", "armonia", " kar ",
-				" midi ", "acústico", " afina", " tonal", " ton ", "timbre", "luthier", "instrumento music" });
+		general.put("INSTRUMENTO_MUSICAL",
+				new String[] { "corda", "sopro", "percurssão", "melodia", "armonia", " kar ", " midi ", "acústico",
+						" afina", " tonal", " ton ", "timbre", "luthier", "instrumento music", "castanhola",
+						"chocalho", "gongo", "pandeireta", "pandeiro", "pratos", "reco-reco", "sino", "tambor",
+						"tamborim", "triângulo", "vibrafone", "xilofone", "clarinete", "flauta", "flautim", "gaita",
+						"saxofone,", "corneta", "trombone", "trompa", "trompete", "tuba", "bandolim",
+						"berimbau", "cavaquinho", "contrabaixo", "guitarra", "harpa", "ukulele", "viola", "violão",
+						"violino", "violoncelo", "acordeão", "piano", "sintetizador", "teclado" });
 
 		general.put("INSETO", new String[] { "abelha", "formiga", "borboleta", "inseto", "mosca", "mosquito",
 				"pernilongo", "inseticida", " escorpi", "aracn", "besouro" });
 
-		general.put("IDIOMA",
-				new String[] { "dialet", "lingua", "tradução", "intérprete", "inglés", "português", "francês", "falar",
-						"idioma", "intercambio", "dicionário", "gramática", "sintáxe", "semântica", "palavra", "fonema",
-						"vernácul", "estrangeiris", "sufix", "prefix" });
+		general.put("IDIOMA", new String[] { "dialet", "lingua", "tradução", "intérprete", "falar", "idioma",
+				"intercambio", "dicionário", "gramática", "sintáxe", "semântica", "palavra", "fonema", "vernácul",
+				"estrangeiris", "Africâner", "Albanês", "Alemão", "Aurebesh", "Árabe", "Armênio", "Azerbaijano",
+				"Basco", "Bengali", "Bielo-russo", "Birmanês", "Bósnio", "Búlgaro", "Catalão", "Cazaque", "Cebuano",
+				"Chichewa", "Chinês", "Cingalês", "Coreano", "Crioulo haitiano", "Croata", "Dinamarquês", "Eslovaco",
+				"Esloveno", "Espanhol", "Esperanto", "Estoniano", "Finlandês", "Francês", "Galego", "Galês",
+				"Georgiano", "Grego", "Hebraico", "Hindi", "Hmong", "Holandês", "Húngaro", "Igbo", "Indonésio",
+				"Inglês", "Ioruba", "Irlandês", "Islandês", "Italiano", "Japonês", "Javanês", "Kannada", "Khmer",
+				"Laosiano", "Latim", "Letão", "Lituano", "Macedônico", "Malaiala", "Malaio", "Malgaxe", "Maltês",
+				"Maori", "Marathi", "Mongol", "Nepalês", "Norueguês", "Persa", "Polonês", "Português", "Romeno",
+				"Russo", "Sérvio", "Sesotho", "Somália", "Sudanês", "Sueco", "Tadjique", "Tagalo", "Tailandês", "Tâmil",
+				"Tcheco", "Telugo", "Turco", "Ucraniano", "Urdu", "Usbeque", "Vietnamita", "Yddish", "Zulu" });
 
 		general.put("JORNALISMO",
 				new String[] { "reporter", "reportagem", "noticia", "divulgac", "matéria jorn", "comentarista",
@@ -613,14 +655,15 @@ public class POCNLUProcessDiego {
 						"comunicacao de massa", "fonte de informação", " leitor ", "credibilidade" });
 
 		general.put("LEIS",
-				new String[] { "legisla", "forum", "justiça", "crime", "juiz", "polícia", "processo", "fiscal", "fisco",
+				new String[] { "legisla", "forum", "justiça", "crime", "juiz", "fiscal", "fisco",
 						"constituição", "constitucio", "tribut", "petição", "advoga", "forense", " OAB ", "jurispruden",
 						"comarca", "acusacao", " reu ", " dever ", " deveres ", " direito ", " direitos ", "advoca",
 						" promotor", "processo penal", "processo civil", " ilegal ", " legal ", "burocra", "juricia",
-						"suprema corte", "corte marcial", " lei ", "juridic", "leis", "judiciario " });
+						"suprema corte", "corte marcial", "juridic", "leis", "judiciario " });
 
-		general.put("LEITURA", new String[] { "texto", " textua", "poesia", "poema", "poeta", "poetiza", "escritor",
+		general.put("LEITURA", new String[] { "texto", " textua", "poesia", "poema", "poeta", "poetiza", "escrita",
 				"obra", "literário", "literatura" });
+
 		general.put("LIGACAO_QUIMICA",
 				new String[] { "tabela periódica", "ligação metalica", " iônic", " octeto", " atomic",
 						"elemento químic", "valencia ", "gás nobre", "ligacoes quimicas", " metal", " ametal",
@@ -637,31 +680,38 @@ public class POCNLUProcessDiego {
 
 		general.put("LIQUIDO",
 				new String[] { "aqua", "água", "aquos", "húmid", "soluve", "solven", "solver ", "dilui", " gota ",
-						"gotícula", " chuva ", " dissolv", "enchente", "alagamento", "alagar", "alagado", " aquifer",
+						"gotícula", " dissolv", "enchente", "alagamento", "alagar", "alagado", " aquifer",
 						"lençol freatico", "fonte termal", "cacimba", "poço artesiano", "absolv", "absorv", "hidrat",
 						"desidrat" });
 
 		general.put("LITERATURA",
 				new String[] { "renascimento", "renascen", "barroc", "romanti", "modernis", "impression", "abstrat",
 						"realis", "naturalis", "ufanis", "trovador", "quinhetis", "seissentis", "moderno" });
-		general.put("LOCAL", new String[] { "condomínio", " rua ", "bairro", " cidade ", "município", "distrito",
-				" ilha ", " estado ", "país", " região ", "continente", "continental", " local ", "municipa", "estadua",
-				" federa", "aldeia", "arquipelago", "povoado", "interior", "urbano", " lugar ", " espaco ", " zona " });
 
-		general.put("LUTA", new String[] { "esforço", " luta", "guerra", "conflito", "arma ", " tiro ", "bomba",
+		general.put("LOCAL",
+				new String[] { " rua ", "bairro", " cidade ", "município", "distrito", " ilha ", " estado ", "país",
+						" região ", "continente", "continental", " local ", "municipa", "estadua", " federa", "aldeia",
+						"arquipelago", "povoado", "interior", " lugar ", " espaco ", " zona ", "regiao",
+						"regioes", "local", "locais", "naciona" });
+
+		general.put("LUTA", new String[] {" luta", "guerra", "conflito", "arma ", " tiro ", "bomba",
 				"confronto", "enfrenta" });
 
 		general.put("MACRO_ATIVIDADES_ECONOMICAS",
 				new String[] { "insdustria", "agricultura", "pecuária", "primário", "secundário", "terceário",
-						"extrativismo", "pesca", "psicultura", "cultivo", "icultura", "criação", "sazonal" });
-		general.put("MAQUINA", new String[] { "máquina", "auto", "carro", "robô", "navio", "motor", "dispositivo",
+						"extrativismo", "pesca", "psicultura", "cultivo", "icultura", "criação", "sazonal",
+						"turismo" });
+
+		general.put("MAQUINA", new String[] { "máquina", "auto", "robô", "navio", "motor", "dispositivo",
 				"ferramenta", "sistema", "equipamento " });
+
 		general.put("MATEMATICA",
 				new String[] { "equação", "fórmula", "enunciado", "multiplicação", "adição", "subtracação", "divisão",
-						"geometria", "calcul", "algebr", "axioma", "deducao", "deduz", "euclid", "numero", "kepler",
-						"fracoes", "matematic", "linha curva", " área ", "equacao", "raíz quadrada", "potencia",
-						"derivac", "logarit", "polinomi", "matriz", "determinante", " grau ", "infinito", "infines",
-						" tende a", "fatorial" });
+						"geometria", "calcul", "algebr", "axioma", "euclid", "numero", "kepler",
+						"fracoes", "matematic", "linha curva", " área ", "equacao", "raíz quadrada", "potenciação",
+						"derivac", "logarit", "polinomi", "matriz", "determinante", " grau ", "infinito", " tende a",
+						"fatorial" });
+
 		general.put("MATERIAL_ESCOLAR",
 				new String[] { "caneta", "lápis", "caderno", "borracha", "livro", "mochila", " farda ", "regua",
 						"apontador", "mochila", "papel", " cola ", " tesoura ", " estojo ", " corretivo ",
@@ -670,103 +720,101 @@ public class POCNLUProcessDiego {
 		general.put("MATERIAIS",
 				new String[] { " materiais ", " material ", "plastico", " concreto ", " corporais ", " físicos ",
 						"mundanos", "elementos", " objetos ", " peças ", " aparatos ", " utensílios ", " equipagem ",
-						"gesso" });
+						"gesso", "corrente", "polia", "parafuso", "prego", "martelo", "marreta", "picareta", "alicate", "serrote",
+						"serra", "chave de fenda", "chave de boca"});
 
 		general.put("MATRIZ_ENERGETICA", new String[] { "matriz energética", "cota de carbono", "hidro elétrica",
 				"termelétrica", "térmic", "fonte energética", "solar", "eólic", "biomassa" });
 
 		general.put("MEDICAMENTOS", new String[] { "Acetazolamida", "Acetilcisteína", "Acetilcolina", "Aciclovir",
 				"Adenosina", "Adrenalina ", "Adsorvente", "Albendazol", "Albumina ", "Alendronato ", "Alfentanilo ",
-				"Alfuzosina", "Alopurinol", "Alprazolam", "Alprostadil", "Amicacina: ", "Amidotrizoato ", "Aminoácidos",
+				"Alfuzosina", "Alopurinol", "Alprazolam", "Alprostadil", "Amicacina", "Amidotrizoato ", "Aminoácidos",
 				"Aminofilina", "Aminohidroximetilpropanolol ", "Amiodarona", "Amissulprida", "Amitriptilina",
-				"Amlodipina", "Amónia", "Amoxicilina", "Amoxicilina ", "Ampicilina", "Anfotericina ", "Artemeter ",
-				"Artesunato ", "Artesunato ", "Asparaginase ", "Aspartame", "Atazanavir", "Atenolol", "Atorvastatina",
-				"Atracúrio", "Atropina", "Aurotiomalato ", "Azatioprina ", "Azelastina", "Azelastina, ", "Azitromicina",
-				"Azoto ", "Baclofeno ", "Beclometasona", "Bendazac ", "Benzalcónio ", "Benzidamina ",
-				"Benzilpenicilina", "Benzilpenicilina ", "Benzilpenicilina ", "Benzoato ", "Beraxoteno", "Betahistina",
-				"Betametasona", "Betametasona, ", "Betametazona ", "Betaxolol", "Betaxolol ", "Bevacizumab",
-				"Bezafibrato", "Bicalutamida", "Bicarbonato ", "Biperideno", "Bisoprolol", "Bleomicina ", "Bromazepam",
-				"Bromexina", "Bromocriptina", "Budenosido", "Budesonida", "Bupivacaina", "Bupropiona", "Buspirona",
-				"Bussulfano", "Butilescopolamina", "Cabergolina", "Calamina", "Cálcio", "Calcipotriol", "Calcipotriol ",
-				"Calcitonin ", "Calcitriol", "Calcitriol(vit ", "Cápsulas: ", "Captopril", "Carbamazepina",
-				"Carbamida: ", "Carboplatina ", "Carvedilol", "Cefazolina ", "Cefotaxima", "Ceftazidima ",
-				"Ceftriaxone", "Cefuroxima", "Cetirizina", "Cetrimida", "Cetrimida+Ácido ", "Cianocobalamina ",
-				"Ciclofosfamida", "Ciclopentolato", "Cicloserina", "Ciclosporina ", "Cimetidina", "Cinarizina",
-				"Ciprofloxacina", "Ciproterona", "Ciproterona ", "Cisplatina ", "Citalopram", "Citarabina ",
-				"Citocromo ", "Citrato ", "Claritromicina", "Clindamicina", "Clobetazol", "Clodrónico, ", "Clofazimina",
-				"Clofazimina+Dapsona+Rifampicina ", "Clomifeno", "Clomipramina", "Clonazepam", "Clonidina", "Clonidine",
-				"Clopidogrel ", "Clorambucil ", "Cloranfenicol", "Cloranfenicol ", "Cloranfenicol ", "Clorfeniramine",
-				"Clorodiazepóxido", "Clorohexidina", "Clorometina ", "Cloropromazina", "Cloroquina", "Clotrimazol",
-				"Cloxacilina", "Cloxazolam", "Codeína", "Colchicina", "Cotrimoxazol", "Cromoglicato", "Dacarbazina ",
-				"Dactinomicina ", "Dantroleno", "Dapsona", "Darbepoetina ", "Daunorrubicina ", "Deferroxamina",
-				"Denominações ", "Desloratidina", "Desmopresina ", "Desogestrel", "Desogestrel ", "Dexametasona",
-				"Dexametasona ", "Dextrano ", "Dextrano ", "Diazepam", "Diclofenac", "Didanosida ", "Digoxina",
-				"Diltiazem", "Dimenhidrinato", "Dimercaprol", "Dimeticone", "Dimetindeno, ", "Dinitrato ",
-				"Dinoprostona ", "Diosmina ", "Dipiridamol", "Dipivefrina", "Diprofilina", "DIRECÇÃO ", "Dissulfiram",
-				"Dobesilato ", "Dobutamina ", "Docetaxel", "Domperidona", "Donepezil", "Dopamina ", "Dorsolamida",
-				"Dorsolamida ", "Doxiciclina", "Doxilamina ", "Doxorrubicina ", "Droperidol", "Drospirenona ",
-				"Econazol", "Efavirenze ", "Efavirenze ", "Efedrina ", "Eletrólitos ", "Eletrólitos ", "Eletrólitos ",
-				"Eletrólitos ", "Emtricitabina ", "Emtricitabina ", "Enalapril", "Ergocalciferol ", "Ergotamina ",
-				"Eritromicina", "Eritropoietina ", "Escitalopram", "Espaglúmico, ", "Espectinomicina", "Espiramicina",
+				"Amlodipina", "Amoxicilina", "Amoxicilina ", "Ampicilina", "Anfotericina ", "Artemeter ", "Artesunato ",
+				"Asparaginase ", "Aspartame", "Atazanavir", "Atenolol", "Atorvastatina", "Atracúrio",
+				"Atropina", "Aurotiomalato ", "Azatioprina ", "Azelastina", "Azelastina, ", "Azitromicina", "Azoto ",
+				"Baclofeno ", "Beclometasona", "Bendazac ", "Benzalcónio ", "Benzidamina ",
+				"Benzilpenicilina ", "Benzoato ", "Beraxoteno", "Betahistina", "Betametasona",
+				"Betametasona, ", "Betametazona ", "Betaxolol", "Betaxolol ", "Bevacizumab", "Bezafibrato",
+				"Bicalutamida", "Bicarbonato ", "Biperideno", "Bisoprolol", "Bleomicina ", "Bromazepam", "Bromexina",
+				"Bromocriptina", "Budenosido", "Budesonida", "Bupivacaina", "Bupropiona", "Buspirona", "Bussulfano",
+				"Butilescopolamina", "Cabergolina", "Calamina", "Cálcio", "Calcipotriol", "Calcipotriol ", "Calcitonin",
+				"Calcitriol", "Calcitriol(vit ", "Cápsulas: ", "Captopril", "Carbamazepina", "Carbamida",
+				"Carboplatina ", "Carvedilol", "Cefazolina ", "Cefotaxima", "Ceftazidima ", "Ceftriaxone", "Cefuroxima",
+				"Cetirizina", "Cetrimida", "Cetrimida+Ácido ", "Cianocobalamina ", "Ciclofosfamida", "Ciclopentolato",
+				"Cicloserina", "Ciclosporina ", "Cimetidina", "Cinarizina", "Ciprofloxacina", "Ciproterona",
+				"Ciproterona ", "Cisplatina ", "Citalopram", "Citarabina ", "Citocromo ", "Claritromicina",
+				"Clindamicina", "Clobetazol", "Clodrónico, ", "Clofazimina", "Rifampicina",
+				"Clomifeno", "Clomipramina", "Clonazepam", "Clonidina", "Clonidine", "Clopidogrel ", "Clorambucil ",
+				"Cloranfenicol",  "Clorfeniramine", "Clorodiazepóxido",
+				"Clorohexidina", "Clorometina ", "Cloropromazina", "Cloroquina", "Clotrimazol", "Cloxacilina",
+				"Cloxazolam", "Codeína", "Colchicina", "Cotrimoxazol", "Cromoglicato", "Dacarbazina ", "Dactinomicina ",
+				"Dantroleno", "Dapsona", "Darbepoetina ", "Daunorrubicina ", "Deferroxamina", "Denominações ",
+				"Desloratidina", "Desmopresina ", "Desogestrel", "Desogestrel ", "Dexametasona", "Dexametasona ",
+				"Dextrano ", "Diazepam", "Diclofenac", "Didanosida ", "Digoxina", "Diltiazem", "Dimenhidrinato",
+				"Dimercaprol", "Dimeticone", "Dimetindeno, ", "Dinitrato ", "Dinoprostona ", "Diosmina ", "Dipiridamol",
+				"Dipivefrina", "Diprofilina", "Dissulfiram", "Dobesilato ", "Dobutamina ", "Docetaxel", "Domperidona",
+				"Donepezil", "Dopamina ", "Dorsolamida", "Dorsolamida ", "Doxiciclina", "Doxilamina ", "Doxorrubicina ",
+				"Droperidol", "Drospirenona ", "Econazol", "Efavirenze ", "Efedrina ",
+				"Eletrólitos ", "Emtricitabina ", "Enalapril", "Ergocalciferol ", "Ergotamina ", "Eritromicina",
+				"Eritropoietina ", "Escitalopram", "Espaglúmico, ", "Espectinomicina", "Espiramicina",
 				"Espironolactona", "Estavudina ", "Estavudina ", "Estavudina ", "Estradiol", "Estradiol ",
 				"Estreptomicina", "Estreptoquinase ", "Estriol", "Estrogénios ", "Etacridine ", "Etambutol",
 				"Etambutol ", "Etinilestradiol ", "Etionamida", "Etofenamato", "Etomidato", "Etoposido ", "Fenilefrina",
 				"Fenintoína: ", "Fenobarbital", "Fentanilo", "Filgrastim ", "Finasterida", "Fitomenadiona: ",
 				"Flavoxato", "Flucloxacilina", "Fluconazol", "Flufenazina", "Flumazenil", "Flunitrazepam",
-				"Fluocinolona ", "Fluoresceína", "Fluoreto ", "Fluorometolona", "Fluorometolona ", "Fluorouracilo ",
-				"Fluoxetina", "Flupentixol ", "Flurazepam", "Flutamida", "Fluticasona ", "Folinato ", "Folinato ",
-				"Formoterol ", "Formoterol ", "Furosemida", "Fusafungina", "Ganciclovir ", "Gase ", "Gel ", "Gel ",
-				"Gelatina ", "Gencitabina", "Gentamicina", "Gentamicina ", "Gestodeno ", "Glibenclamida", "Glicerina",
-				"Gliclazida ", "Glucagom", "Glucosamina", "Glucose ", "Glucose ", "Glutaraldehido", "Glycina",
-				"Gonadotrofina ", "Goserelina", "Gramicidina ", "Griseofulvina", "Haloperidol", "Halotano", "Heparina",
-				"Heparinoide", "Hexetidina", "Hialuronato ", "Hialuronidase", "Hidralazina", "Hidroclorotiazida",
-				"Hidrocortisona", "Hidroxicarbamida( ", "Hidroxicobalamina", "Hidróxido ", "Hidróxido ",
-				"Hidroxipropilmetilcelulose", "Hidroxizina", "Hipoclorito ", "Hipossulfito ", "Homatropina",
-				"Ibuprofeno", "Ifosfamida", "Imatinibe", "Imipenem ", "Imipramina", "Imunoglobulina ",
-				"Imunoglobulina ", "Imunoglobulina ", "Imunoglobulina ", "Imunoglobulina ", "Indapamida", "Indinavir ",
-				"Indometacina", "Insulina ", "Insulina ", "Insulina ", "Insulina ", "Insulina ", "Interferão ",
-				"Iodo-Iodetado", "Iodopovidona", "Iopamidol", "Iopidol ", "Iopodato", "Iopromida", "Ioversol",
-				"Ioxitalamato", "Ipratrópio", "Irbesartan ", "Isofluorano", "Isoniazida", "Isoniazida ",
-				"Isoprenalina ", "Isotretinoína ", "Isotretinoina ", "Itraconazol", "Kanamicina ", "Ketamina",
-				"Ketoconazol", "Ketotifeno", "ketotifeno", "Labetalol", "Lactato ", "Lactulose", "Lamivudina ",
-				"Lamivudina ", "Lamotrigina", "Latanoproste", "Latanoproste ", "Letrozol", "Levamisol", "Levedopa ",
-				"Levofloxacina", "Levomepromazina", "Levonorgestrel", "Levotiroxina: ", "Lidocaína", "Lidocaína ",
-				"Lípidos:", "Lisinopril", "Lítio", "Loperamida", "Lopinavir ", "Loratadina", "Lorazepam", "Manitol",
-				"Mebendazol", "Mebeverina", "Medroxiprogesterona", "Mefloquina", "Megestrol", "Melfalano",
-				"Mercaptopurina", "Mesna", "Messalazina", "Metadona) ", "Metamizol", "Metformina", "Metilcelulose",
-				"Metildopa", "Metilergometrina ", "Metilfenidato ", "Metilprednisolona", "Metimazol ", "Metipranolol ",
-				"Metoclopramida", "Metoprolol", "Metotrexato", "Metoxsaleno ", "Metronidazol", "Metronidazol:",
-				"Micofenato ", "Miconazol", "Midazolam", "Misoprostol ", "Mitomicina", "Mitoxantrona", "Molgramostim ",
-				"Mometasona", "Mononitrato ", "Montelucaste", "Morfina", "Nadroparina ", "Nalidíxico, ", "Naloxona",
-				"Naltrexona", "Nandrolona", "Naproxeno", "Nelfinavir ", "Neomicina ", "Neomicina ", "Neostigmina",
-				"Nevirapina ", "Nicotinamida ", "Nifedipina", "Nimodipina", "Nistatina", "Nitrato ", "Nitrazepan",
-				"Nitrito ", "Nitrofurantoína", "Nitrofurazona", "Nitroglicerina: ", "Nitroprussiato ", "Noradrenalina ",
-				"Noretisterona ", "Norfloxacina", "Nortriptilina", "Ofloxacina", "Olanzapina", "Olopatadina",
-				"Omeprazole", "Ondansetron ", "Orciprenalina", "Orthoftaldehído", "Oseltamivir ", "Osseína ",
-				"Oxaliplatina", "Oxibuprocaína", "Oxibutinina", "Oximetazolina", "Oxitocina ", "Paclitaxel",
-				"Pancreatina", "Paracetamol ", "Paradiclorobenzeno, ", "Parafina ", "Paroxetina", "Penicilamina",
-				"Pentamidina ", "Pentoxifilina", "Permanganato ", "Permetrina", "Peróxido ", "Peróxido ", "Petidina ",
-				"Pidolato ", "Pilocarpina", "Pimosida ", "Piperacilina ", "Pipotiazina", "Piracetam", "Pirantel",
-				"Pirazinamida", "Pirenoxina", "Piretrinas", "Piridostigmina", "Piridoxina", "Pirimetamina ",
-				"Piroxicam", "Podofilotoxina", "Polistireno ", "Potássio", "Pralidoxima", "Pravastatina",
-				"Praziquantel", "Prednisolona", "Primaquina", "Probenecid:", "Procarbazina ", "Produtos ",
+				"Fluocinolona ", "Fluoresceína", "Fluoreto ", "Fluorometolona", "Fluorouracilo ", "Fluoxetina",
+				"Flupentixol ", "Flurazepam", "Flutamida", "Fluticasona ", "Folinato ", "Formoterol ", "Formoterol ",
+				"Furosemida", "Fusafungina", "Ganciclovir ", "Gase ", "Gel ", "Gelatina ", "Gencitabina", "Gentamicina",
+				"Gentamicina ", "Gestodeno ", "Glibenclamida", "Glicerina", "Gliclazida ", "Glucagom", "Glucosamina",
+				"Glutaraldehido", "Glycina", "Gonadotrofina ", "Goserelina", "Gramicidina ", "Griseofulvina",
+				"Haloperidol", "Halotano", "Heparina", "Heparinoide", "Hexetidina", "Hialuronato ", "Hialuronidase",
+				"Hidralazina", "Hidroclorotiazida", "Hidrocortisona", "Hidroxicarbamida( ", "Hidroxicobalamina",
+				"Hidróxido ", "Hidróxido ", "Hidroxipropilmetilcelulose", "Hidroxizina", "Hipoclorito ",
+				"Hipossulfito ", "Homatropina", "Ibuprofeno", "Ifosfamida", "Imatinibe", "Imipenem ", "Imipramina",
+				"Imunoglobulina ", "Imunoglobulina ", "Imunoglobulina ", "Imunoglobulina ", "Imunoglobulina ",
+				"Indapamida", "Indinavir ", "Indometacina", "Interferão ", "Iodo-Iodetado", "Iodopovidona", "Iopamidol",
+				"Iopidol ", "Iopodato", "Iopromida", "Ioversol", "Ioxitalamato", "Ipratrópio", "Irbesartan ",
+				"Isofluorano", "Isoniazida", "Isoniazida ", "Isoprenalina ", "Isotretinoína ", "Isotretinoina ",
+				"Itraconazol", "Kanamicina ", "Ketamina", "Ketoconazol", "Ketotifeno", "ketotifeno", "Labetalol",
+				"Lactato ", "Lactulose", "Lamivudina ", "Lamivudina ", "Lamotrigina", "Latanoproste", "Latanoproste ",
+				"Letrozol", "Levamisol", "Levedopa ", "Levofloxacina", "Levomepromazina", "Levonorgestrel",
+				"Levotiroxina: ", "Lidocaína", "Lidocaína ", "Lípidos:", "Lisinopril", "Lítio", "Loperamida",
+				"Lopinavir ", "Loratadina", "Lorazepam", "Manitol", "Mebendazol", "Mebeverina", "Medroxiprogesterona",
+				"Mefloquina", "Megestrol", "Melfalano", "Mercaptopurina", "Mesna", "Messalazina", "Metadona) ",
+				"Metamizol", "Metformina", "Metilcelulose", "Metildopa", "Metilergometrina ", "Metilfenidato ",
+				"Metilprednisolona", "Metimazol ", "Metipranolol ", "Metoclopramida", "Metoprolol", "Metotrexato",
+				"Metoxsaleno ", "Metronidazol", "Metronidazol:", "Micofenato ", "Miconazol", "Midazolam",
+				"Misoprostol ", "Mitomicina", "Mitoxantrona", "Molgramostim ", "Mometasona", "Mononitrato ",
+				"Montelucaste", "Morfina", "Nadroparina ", "Nalidíxico, ", "Naloxona", "Naltrexona", "Nandrolona",
+				"Naproxeno", "Nelfinavir ", "Neomicina ", "Neomicina ", "Neostigmina", "Nevirapina ", "Nicotinamida ",
+				"Nifedipina", "Nimodipina", "Nistatina", "Nitrato ", "Nitrazepan", "Nitrito ", "Nitrofurantoína",
+				"Nitrofurazona", "Nitroglicerina: ", "Nitroprussiato ", "Noradrenalina ", "Noretisterona ",
+				"Norfloxacina", "Nortriptilina", "Ofloxacina", "Olanzapina", "Olopatadina", "Omeprazole",
+				"Ondansetron ", "Orciprenalina", "Orthoftaldehído", "Oseltamivir ", "Osseína ", "Oxaliplatina",
+				"Oxibuprocaína", "Oxibutinina", "Oximetazolina", "Oxitocina ", "Paclitaxel", "Pancreatina",
+				"Paracetamol ", "Paradiclorobenzeno, ", "Paroxetina", "Penicilamina", "Pentamidina ", "Pentoxifilina",
+				"Permanganato ", "Permetrina", "Petidina ", "Pidolato ", "Pilocarpina", "Pimosida ", "Piperacilina ",
+				"Pipotiazina", "Piracetam", "Pirantel", "Pirazinamida", "Pirenoxina", "Piretrinas", "Piridostigmina",
+				"Piridoxina", "Pirimetamina ", "Piroxicam", "Podofilotoxina", "Polistireno ", "Potássio", "Pralidoxima",
+				"Pravastatina", "Praziquantel", "Prednisolona", "Primaquina", "Probenecid:", "Procarbazina ",
 				"Progesterona ", "Proguanil", "Promestrieno", "Prometazina", "Propacetamol ", "Propiltiouracilo",
-				"Propofol", "Propranolol", "Protamina", "Protóxido ", "Protóxido ", "Quetiapina", "Quinina",
+				"Propofol", "Propranolol", "Protamina", "Protóxido ", "Quetiapina", "Quinina",
 				"Raloxifeno", "Ramipril", "Ranitidina", "Repaglinida", "Retinol", "Retinol ", "Retinol ", "Ribomunyl",
 				"Rifabutina ", "Rifampicina", "Rifampicina ", "Rifampicina ", "Rimexolona", "Ringer ", "Risperidona",
 				"Ritodrina ", "Ritonavir ", "Rivastigmina", "Ropivacaína", "Rosevastatina", "Sacarina", "Salbutamol",
-				"Salmeterol", "Saquinavir ", "Seconidazol", "Selegilina", "Selénio", "Sene", "Sertralina",
-				"Sevoflurano", "Shirmmer", "Sildenafil ", "Simvastatina", "Simvastatina ", "Sirolumus ", "Sucralfato",
-				"Sulfadiazina", "Sulfadiazina ", "Sulfadoxina ", "Sulfassalazina ", "Sulfato ", "Sulfato ",
-				"Sumatriptano", "Suxametónio ", "Tacrolimus ", "Tadalafil", "Talidomida ", "Talidomida ", "Tamoxifeno",
-				"Tansulosina", "Telmisartan", "Tenofovir ", "Teofilina", "Terazosina", "Testosterona", "Tetraciclina ",
-				"Tiamina: ", "Tiapride", "Tibolona", "Ticlopidina", "Timolol", "Timolol ", "Tinidazol",
-				"Tiocolquicósido", "Tioconazol", "Tiopental", "Tiossulfato ", "Tiotrópio", "Tocoferol: ", "Topiramato",
-				"Tramadol", "Travoprost", "Tretinoina ", "Tretinoina ", "Triancinolona", "Triclabendazole",
-				"Trifluoperazina", "Trimetazidina", "Triple-sulfa", "Triptorrelina ", "Tropicamida", "Troxerutina",
-				"Tuberculina ", "UTrazodona", "Vacina ", "Valproato: ", "Valsartan", "Valsartan ", "Vancomicina ",
-				"Vardenafil", "Varfarina", "Vecurónio", "Venlafaxina", "Verapamil", "Vinblastina", "Vincristina",
-				"Violeta ", "Zidovudina ", "Zidovudina ", "Ziprasidona", "Zoledronico", "Zopiclona" });
+				"Salmeterol", "Saquinavir ", "Seconidazol", "Selegilina", "Selénio", "Sertralina", "Sevoflurano",
+				"Shirmmer", "Sildenafil ", "Simvastatina", "Simvastatina ", "Sirolumus ", "Sulfadiazina",
+				"Sulfadiazina ", "Sulfadoxina ", "Sulfassalazina ", "Sumatriptano", "Suxametónio ", "Tacrolimus ",
+				"Tadalafil", "Talidomida ", "Talidomida ", "Tamoxifeno", "Tansulosina", "Telmisartan", "Tenofovir ",
+				"Teofilina", "Terazosina", "Testosterona", "Tetraciclina ", "Tiamina: ", "Tiapride", "Tibolona",
+				"Ticlopidina", "Timolol", "Timolol ", "Tinidazol", "Tiocolquicósido", "Tioconazol", "Tiopental",
+				"Tiossulfato ", "Tiotrópio", "Tocoferol: ", "Topiramato", "Tramadol", "Travoprost", "Tretinoina ",
+				"Tretinoina ", "Triancinolona", "Triclabendazole", "Trifluoperazina", "Trimetazidina", "Triple-sulfa",
+				"Triptorrelina ", "Tropicamida", "Troxerutina", "Tuberculina ", "UTrazodona", "Valproato", "Valsartan",
+				"Valsartan ", "Vancomicina ", "Vardenafil", "Varfarina", "Vecurónio", "Venlafaxina", "Verapamil",
+				"Vinblastina", "Vincristina", "Zidovudina ", "Zidovudina ", "Ziprasidona", "Zoledronico",
+				"Zopiclona" });
 
 		general.put("MEIO_AMBIENTE", new String[] { "natur", "meio ambiente", "habitát", "ecossistema", " ecolog",
 				"ambienta", " bioma ", "golfo", "fauna", " flora" });
@@ -778,8 +826,8 @@ public class POCNLUProcessDiego {
 						"membros inferiores" });
 
 		general.put("MINERIOS",
-				new String[] { "ferro", " aço ", "bronze", " cobre ", "chumbo", "níquel", " ouro ", "óleo", "couro",
-						"resina", "alumin", "miner", "polimeto", "polipropileno", " gemas ", " diamante ", " hematita ",
+				new String[] { "ferro", " aço ", "bronze", " cobre ", "chumbo", "níquel", " ouro ", "óleo",
+						"resina", "alumin", "miner", "polimeto", "polipropileno", " diamante ", " hematita ",
 						" magnetita ", " pirita ", " manganita ", " malaquita ", " bauxita ", " cassiteria ", " Rubi ",
 						" safira ", " Esmeralda ", " Espinelio ", " turmalina ", " ametista ", " topazio ",
 						" turqueza ", " quartzo " });
@@ -804,22 +852,34 @@ public class POCNLUProcessDiego {
 						"rock" });
 		general.put("NECESSIDADE_PRIMARIA",
 				new String[] { "respira", " aliment", " água ", " sede ", " come ", " bebe " });
-		general.put("NECESSIDADE_SECUNDARIA", new String[] { " casa", " morad", "calçado", "vestuário", " abrigo" });
+		general.put("NECESSIDADE_SECUNDARIA", new String[] { " casa", " morad", "calçado", "vestuário" });
 
 		general.put("NIVEL_ENSINO", new String[] { "ensino básico", "ensino fundamental", "ensino médio", "universi",
 				" mestr", " graduac", "especializa", "doutor" });
 
-		general.put("NUMERO", new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" });
+		general.put("NUMERO", new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", " um ", " dois ",
+				" três ", " quatro ", " cinco ", " seis ", " sete ", " oito ", " nove ", " zero ", "primeir", "segund",
+				"terceir", "quart", "quint", "sext", "sétim", "oitav", "nono", "décimo", "nona", "décimo primeiro",
+				"undécimo", "décimo segundo", "duodécimo", "décimo terceiro", "décimo quarto", "décimo quinto",
+				"décimo sexto", "décimo sétimo", "décimo oitavo", "décimo nono", "vigésimo", "vigésimo primeiro",
+				"vigésimo segundo", "vigésimo terceiro", "vigésimo quarto", "vigésimo quinto", "vigésimo sexto",
+				"vigésimo sétimo", "vigésimo oitavo", "vigésimo nono", "trigésimo", "quadragésimo ", "quinquagésimo",
+				"sexagésimo", "septuagésimo ou setuagésimo", "octogésimo", "nonagésimo", "centésimo", "ducentésimo",
+				"trecentésimo", "tricentésimo", "quadringentésimo", "quingentésimo", "sexcentésimo ou seiscentésimo",
+				"septingentésimo ou setingentésimo", "octingentésimo ou octogentésimo",
+				"noningentésimo ou nongentésimo", "milésimo", "décimo milésimo", "centésimo milésimo", "milionésimo",
+				"bilionésimo", "trilionésimo", "quatrilionésimo", "quintilionésimo", "Sextilionésimo", "Septilionésimo",
+				"Octilionésimo", "Nonilionésimo", "Decilionésimo" });
 
-		general.put("OCEANO", new String[] { "atlântico", "indico", "pacífico", "artico", "glacial" });
+		general.put("OCEANO", new String[] { "atlântico", "indico", "pacífico", "glacial" });
 
 		general.put("ONDULATORIA", new String[] { "propagar", "propagacao", "propagado", "eletromagne", "dimensional",
 				" vibra", "longitu", "transvers", " corda", " vácuo", "comprimento de onda", "onda" });
 
 		general.put("ORGANIZAR",
-				new String[] { "processo", "organizar", "arruma", "metodologi", "organizado", "correta", "corretud",
+				new String[] { " processo ", "arruma", "metodologi", "organizado", "correta", "corretud",
 						"retifica", "ajust", "corrig", " fila ", "enfileira", "agenda", "planeja", "BPMS", " BPM ",
-						"gerente", "coordena", "administra", "relatorio" });
+						 "administra", "relatorio" });
 
 		general.put("ORIENTACAO_OBJETOS",
 				new String[] { " POO ", "orientacao a objeto", "tipo de variável", "polimorfismo", "encapsulamento",
@@ -851,14 +911,14 @@ public class POCNLUProcessDiego {
 				"Mongólia", "Albânia", "Arménia", "Jamaica", "Lituânia", "Catar", "Namíbia", "Botsuana", "Lesoto",
 				"Gâmbia", "Macedónia", "Eslovénia", "Gabão", "Letónia", "Bissau", "Cosovo", "Barém", "Suazilândia",
 				"Tobago", "Equatorial", "Estónia", "Maurícia", "Chipre", "Jibuti", "Fiji", "Comores", "Butão", "Guiana",
-				"Montenegro", "Salomão", "Luxemburgo", "Suriname", "Verde", "Micronésia", "Maldivas", "Brunei", "Malta",
+				"Montenegro", "Salomão", "Luxemburgo", "Suriname", "Micronésia", "Maldivas", "Brunei", "Malta",
 				"Bahamas", "Belize", "Islândia", "Barbados", "Vanuatu", "Príncipe", "Lúcia", "Quiribáti", "Granadinas",
 				"Tonga", "Granada", "Barbuda", "Seicheles", "Andorra", "Dominica", "Neves", "Samoa", "Marechal",
 				"Mónaco", "Listenstaine", "Marinho", "Palau", "Nauru", "Tuvalu", "Vaticano", " ONU ", " OTAN ", " OEA ",
 				"Uniao Europeia", "Nações unidas", "diplomacia", "embaixad" });
 
-		general.put("PEIXE", new String[] { "peixe", "aquário", "barbatana", "guelra", "branqui", "nadadeira", "escama",
-				" pesca", "aquacultura", "tubarao", "ictiologia", "pesqueir", "psicultura", "viveiro", });
+		general.put("PEIXE", new String[] { "aquário", "barbatana", "guelra", "branqui", "nadadeira", "escama",
+				" pesca", "aquacultura", "tubarao", "ictiologia", "pesqueir", "viveiro", });
 
 		general.put("PERIGO",
 				new String[] { "risco", "arriscado", "fugir", " medo ", "predador", "caça", "defesa", "escapar",
@@ -872,26 +932,26 @@ public class POCNLUProcessDiego {
 
 		general.put("PENSAMENTO",
 				new String[] { "idéia", "pensamento", "filósofo", "filosofia", "pergunta", "explica", "imagina",
-						"sonho", "deduz", "criar", "criativ", "fantasi", "realidade", "pensar", "pensamento", "ilusio",
+						"sonho", "deduz", "criar", "criativ", "fantasi", "realidade", "pensar", "ilusio",
 						"ilusor", "ilusao", "acredita", "crenca", " pensador", " pensa ", " sonha", "mental",
-						" raciocínio ", " crítica ", " idéia ", " senso ", "razão", "lógica" });
+						" raciocínio ", " crítica ", " idéia ", " senso ", "razão", "lógica", "deducao" });
 
 		general.put("PLANETA", new String[] { " terra ", " marte ", " vênus ", " mercurio ", " plutao ", " netuno ",
 				" saturno ", " urano ", " jupiter ", " astro ", " esférico ", " mundo ", " corpo celeste " });
 
 		general.put("PLANO",
-				new String[] { "planejar", "pdca", "organizar", "prever", "medir", "controle", "estratég", "recurso",
+				new String[] { "planejar", "pdca", "organizar", "medir", "controle", "estratég", "recurso",
 						"execucao", "esquema", "reuniao", "planejame", "roadmap", "acompanhamen", "scrum",
 						"burningdown", "diagrama de pareto", "project", "relatorio", "orcamento", "budget", "orcado",
-						"cumprimento de meta", " concreto ", " esboço ", " esquema ", " proposta " });
+						"cumprimento de meta", " esboço ", " esquema ", " proposta " });
 
 		general.put("PLANTA",
 				new String[] { "planta", "caule", "flor", "folha", "raiz", "semente", "cotiledone", " talo ", " seiva ",
 						"clorofila", "cloroplasto", "photosíntese", " pólem ", "poliniz", "enchert", " galho ",
-						"espinho", "pétala", "casca", "frut", "adubo", "rosas", "bromeli", " vegetal " });
+						"espinho", "pétala", "casca", "frut", "adubo", "rosas", "bromeli", "veget" });
 
 		general.put("POESIA",
-				new String[] { "poesia", "lírico", "poetic", "poetiza", "poeta", "semiologic", "épico", "métrica",
+				new String[] { "lírico", "poetic", "semiologic", "épico", "métrica",
 						"liturgi", " hino ", " salmo ", " sura ", "hádice", "gregorian", "retóric", " verso", " prosa ",
 						" eloquen", "norma culta", " soneto" });
 
@@ -904,7 +964,7 @@ public class POCNLUProcessDiego {
 				new String[] { "sociedade", "politica", "filosof", " lei ", "govern", "partid", "prefeit", " ong",
 						"parlament", "candidat", "direito", "eleição", " voto ", "eleitor", " minist", " rei ",
 						"rainha", "presidente", "ditador", "ditadura", "despot", "impera", "imperio", " rein", "cidada",
-						"social", "sociais", " etica", " etico", "militan", "partido poli", "partidos polit",
+						"social", "sociais", "militan", "partido poli", "partidos polit",
 						"sindicato", "sindicalis", "conselho de classe", "democra", "globaliz" });
 
 		general.put("PONTOS_CARDEAIS", new String[] { "norte", " sul", "sulista", "leste", " oeste ", "Setentrional",
@@ -915,7 +975,7 @@ public class POCNLUProcessDiego {
 
 		general.put("POSICIONAMENTO",
 				new String[] { " perto ", " longe ", " alto ", " baixo ", " ir ", "vir ", " viagem ", " partir ",
-						" vertical ", " horizont", "adjace", "adjunt", "esquerd", "direit", "cima", "baixo", "lado",
+						" vertical ", " horizont", "adjace", "adjunt", "esquerd", "direit", "cima", "lado",
 						" atras ", "proximo", "distante", "dentro", "fora", "intern", "extern" });
 
 		general.put("POVO", new String[] { " povo ", "população", "comunidade", "morador", "habitante", " nação ",
@@ -925,23 +985,23 @@ public class POCNLUProcessDiego {
 				new String[] { "grego", "greco", "roman", "nordic", "mesopot", "sumer", "egip", "barbar", "indio" });
 
 		general.put("PINTURA",
-				new String[] { "tela", "pintura", "gravura", "desenho", "rabisco", "pintar", "pintura", "tinta",
+				new String[] { "tela", "gravura", "desenho", "rabisco", "pintar", "tinta",
 						"obra de arte", "quadro", "printing", "printer", "blueprint", "fingerprint", "brush", "imagem",
-						"imagens", "camera", "pincel", "tingi", "tinta", "pintor" });
+						"imagens", "camera", "pincel", "tingi", "pintor" });
 
 		general.put("PRACA", new String[] { "banco da praça", " coreto", "fonte de água", "chafaris", "parques",
 				"jardim", "calçada" });
 
-		general.put("PRAGAS", new String[] { "praga", "lavoura", "platio", "cultivo", "transmissão de doença",
+		general.put("PRAGAS", new String[] { "praga", "lavoura", "platio", "transmissão de doença",
 				"vetores de doença", "vetor de doenç", "controle de praga", "defensivo", "agrotóxico" });
 
 		general.put("PRISAO",
-				new String[] { "preso", "julga", "pena ", "penal", "condena", "presídi", "cadeia", " cela ", "captura",
+				new String[] { "preso", "julga", "pena ", "penal", "presídi", "cadeia", " cela ", "captura",
 						"algema", "encarcera", "prision", "penitenci", "delegacia", "detetive", "detetado", " confina",
 						"condena", " prender " });
 
 		general.put("PROBLEMAS_HUMANOS", new String[] { "fome", "extinca", "consumis", "guerra", "desigualdade",
-				"pobre", "marginal", "polui", "sujeira", "lixo", "degradacao", "contamina", "tolerancia", " paz " });
+				"marginal", "polui", "sujeira", "lixo", "degradacao", "contamina", "tolerancia", " paz " });
 
 		general.put("PROPRIDADE", new String[] { "posse", "propriedade", "pertence", "dono", "patrimonio", "recurso",
 				"proprietario", "senhor", "possui" });
@@ -953,7 +1013,7 @@ public class POCNLUProcessDiego {
 		general.put("PROSTITUICAO",
 				new String[] { "prostituta", "gigolo", "iniciacao sexual", "sexo pago", "doencas venerias", "promiscuo",
 						"promisquidade", "mesalina", "cortesas", "hetera", "doenca sexual", "sexualmente transmissivel",
-						"dst", "turismo sexual", "pedofil", "garotas de programa", "garota de programa",
+						"turismo sexual", "pedofil", "garotas de programa", "garota de programa",
 						"garoto de programa", "garotos de programa", "striptease", " motel", " moteis", "prostibulo",
 						"casa noturna", "assedio sexual", "erotismo", "erotic", "sexshopp", "fetiche", "sexo casual",
 						"traicao conjugal", "sexo fora do casamento", "travesti", "transformista" });
@@ -967,9 +1027,8 @@ public class POCNLUProcessDiego {
 		general.put("QUIMICA",
 				new String[] { "químic", "átomo", "atomi", "elétron", "próton", "mistura", "reação", "composto",
 						"ácido ", "ácida ", "acidez", " alcalin", "básico", "eletró", "óxid", "quimica inorganica",
-						"quimica organica", "alquimia", "pedra filosofal", "amino", "carbon", "carboidrato", "destila",
-						"decanta", " neutron ", " ion ", " cation ", " anion ", " catodo ", " anodo ", " particula",
-						"glicose" });
+						"quimica organica", "alquimia", "pedra filosofal", "amino", "carbon", "destila", "decanta",
+						" neutron ", " ion ", " cation ", " anion ", " catodo ", " anodo ", "glicose", " ph " });
 
 		general.put("REACAO_QUIMICA",
 				new String[] { " agente ", " reagente ", "composicao quimica", "molecula", "endotermic", "esotermic",
@@ -996,39 +1055,39 @@ public class POCNLUProcessDiego {
 		general.put("RELIGIAO",
 				new String[] { " deus", " fé ", "devoção", "devot", "pecado", "espirito", "messias", "salvador",
 						" alma ", "religi", "crença", "protestant", "cristian", "maometis", "uband", "budis", "xitois",
-						"islamis", "sagrado", " sacro", " sacra", "calice", " culto", " cultu" });
+						"islamis", "sagrado", " sacro", " sacra", " culto", " cultu" });
 
 		general.put("REINOS_ANIMAIS", new String[] { " animalia", " protista", " monera", "fungi", "plantae",
-				"carnivoro", "onivoro", "reino animal" });
+				"carnivoro", "onivoro", "reino animal", "protozo" });
 
 		general.put("RURAL", new String[] { " campo", "fazenda", "sítio", "gado", "rebanho", "interior", "chácara",
-				"cercado", "ribeir", "campestre", "rural", "vaqueiro", "vaquejada", "cavalo", "carroça", "engenho",
-				"cercado", "curral", "rebanho", "estrada de barro", "jumento", "burro", " asno ", "calinha", "frango",
-				"granja", "cocheira", "pilao", "moinho", "vacaria", "boiadeir", " peao ", "pocilga", " roça", "pomar",
-				" orta ", "canavial", "colheita", "safra", "plantio", "estacao das chuvas", "festa junina",
-				"agricultor", "caipira", "trator", " arado", "enchada", " pá ", "ciscador", " foice ", " machado ",
-				"motoserra", " viola", "sertao", "sertanejo", "chapeu de palha", "Jibao", " arreio", " chicote",
-				"chibata", "colhedeira", "agranomo", "cooperativa", " rodeio" });
+				"ribeir", "campestre", "rural", "vaqueiro", "vaquejada", "carroça", "engenho", "cercado",
+				"curral", "estrada de barro", "jumento", " asno ", "frango", "granja",
+				"cocheira", "pilao", "moinho", "vacaria", "boiadeir", " peao ", "pocilga", " roça", "pomar", " orta ",
+				"canavial", "colheita", "safra", "plantio", "estacao das chuvas", "festa junina", "agricultor",
+				"caipira", "trator", " arado", "enxada", " pá ", "ciscador", " foice ", " machado ", "motoserra",
+				" viola", "sertao", "sertanejo", "chapeu de palha", "Jibao", " arreio", " chicote", "chibata",
+				"colhedeira", "agranomo", "cooperativa", " rodeio" });
 
 		general.put("SAUDE", new String[] { "saúde", "saudável", "curado", "forte", "bem-estar", "vacina", "robust",
-				"medicin", "anestesi", "enferma", "saúde coletiva", "serviços de saúde" });
+				"medicin", "anestesi", "enferma", "saúde coletiva", "serviços de saúde", "paciente" });
 
 		general.put("SEGURANCA", new String[] { "segurança", "proteção", " arma ", "assalt", "política pública",
-				"ir e vir", "polícia", "latro", "furto", "roubo", "rouba", "belico", " protegid " });
+				"ir e vir", "latro", "furto", "roubo", "rouba", "belico", " protegid " });
 
 		general.put("SEGURANCA_INFORMACAO",
-				new String[] { "senha", "password", "criptogra", "certificado", "cripta", "ataque", "roubo de",
+				new String[] { "senha", "password", "criptogra", "cripta", "ataque", "roubo de",
 						"engenharia social", "autentica", "protocolo de segurança", "antivrirus", "spam", "auth",
 						" jwt ", "certificad" });
 
 		general.put("SEXO",
 				new String[] { "reprodução", "reprodut", "sexo", " coito", "relação sexual", "acasala", "cortejo",
-						"macho", "fêmea", "gestação", "gravides", " gravida ", " prazer", " fornica", " mascul",
+						"macho", "fêmea", "gestação", "gravidês", " gravida ", " prazer", " fornica", " mascul",
 						" femini", " parto ", " nascimento ", "fecunda", "fecundo", " ovulo", "espermatozoide", " feto",
 						"hermafrodita", "abort", "sexua", " engravidar ", " engravid" });
 
 		general.put("SELECAO", new String[] { "escolha", "filtr", " selec", " selet", " individu", " descart",
-				" despres", " separa", " catalog" });
+				" separa", " catalog" });
 
 		general.put("PERIODICIDADE",
 				new String[] { "segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo", "dominical",
@@ -1038,9 +1097,9 @@ public class POCNLUProcessDiego {
 						"novembro", "dezembro", " rotin", "aleatori", "period" });
 
 		general.put("PROFISSAO_EXATA_NATUREZA",
-				new String[] { "Engenheiro", "Programador", "Desenvolvedor", "Analista", "Arquiteto", "Matemático",
+				new String[] { "Engenheiro", "Programador", "Desenvolvedor", "Analista", "Arquiteto ", "Matemático",
 						"Físico", "Químico", "Bacharel", "Estatísti", "Eletrotécni", "Mecânic", "Astrônomo", "Bioeng",
-						"Geógraf", "Astronauta", "Agrônom", "Topógraf", "Cartograf" });
+						"Geógraf", "Astronauta", "Agrônom", "Topógraf", "Cartograf", "engenharia" });
 
 		general.put("PROFISSAO_HUMANA_ARTE",
 				new String[] { "Advogado", "Administrador", "Contador", "Secretári", "Sociólogo", "Filósofo", "Pedagog",
@@ -1053,12 +1112,14 @@ public class POCNLUProcessDiego {
 						"Obstetr", "Dermatologi", "Instrumenti", "Neurologi", "Cardiologi", "Pneumologi", "Oncologi",
 						"Farmac" });
 
-		general.put("SENTIDOS", new String[] { "audição", "olfato", "paladar", " tato ", "visão", "ouvir", "olhar",
-				"cheir", "tocar", "ouvido", " pele ", "degust", "retina" });
+		general.put("SENTIDOS",
+				new String[] { "audição", "ouvir", "olfat", "cheir", "gosto", "paladar", "toque", "tocar", "manusear",
+						" tato ", "visão", " ver ", " olhar", "olha", "tocar", " pele ",
+						"retina", "visuali", "degust", "degluti", "nausea", "intui", "sensori", "percepc" });
 
 		general.put("SENTIMENTO",
 				new String[] { "medo", "raiva", "alegria", "frustra", "eufori", "pavor", "esperanç", "afeto", "afeti",
-						"afeic", "apego", "carinho", "despres", "depress", "desist", "trist", "ódio", "fobia", "averss",
+						"afeic", "apego", "carinho", "depress", "desist", "trist", "ódio", "fobia", "averss",
 						"Amor", "feliz", "bondos", "benig", "malign", "sentimento", "sentir", " emocao ", "emocion" });
 
 		general.put("SISTEMA_BUSCA",
@@ -1082,7 +1143,7 @@ public class POCNLUProcessDiego {
 				"relacional", "development", "developer", " sistemas de informacao", " computac", " computad" });
 
 		general.put("SOM",
-				new String[] { "onda sonora", "sonoridade", "barrulh", "falante", "fones", "sonar", "morcego", " eco ",
+				new String[] { "onda sonora", "sonoridade", "barrulh", "falante", "fones", "sonar", " eco ",
 						"reverbe", "grave", "agudo", "timbre", "distorção", "mixagem", "masteriza", "equaliza",
 						"compress", "amplifica", " sinal ", "ruido", "silenci", "calar", "calado", " mudo ", " surdo ",
 						"surdez" });
@@ -1095,13 +1156,13 @@ public class POCNLUProcessDiego {
 		general.put("TECNOLOGIA",
 				new String[] { "tecnologi", "foguete", "espacial", " nasa ", "celular", "desenvolvimento", "técnica",
 						" novo ", "inova", "metodo", "bluetooth", " internet ", " redes de computadores", " informat",
-						" hardware ", " software ", " inteligencia artificial ", "códigos" });
+						" hardware ", " software ", " inteligencia artificial " });
 
-		general.put("TEATRO", new String[] { "drama", "comédia", "teatro", "palco", "peça teatral", "musical", "ópera",
+		general.put("TEATRO", new String[] { "drama", "comédia", "palco", "peça teatral", "musical", "ópera",
 				"roteiro", "interpret", "atriz", " ator", " cena ", " cenário", " cenic", "persona", "personif" });
 
 		general.put("TELA_COMPUTADOR", new String[] { "pixel", " png ", "bitmap", "JPEG", "BMP", "resolução",
-				"densidade", "layer", "RGB", "tela plana", "cromati", " tela ", " led ", "cristal liquid" });
+				"densidade", "layer", "RGB", "tela plana", "cromati", " tela de", " led ", "cristal liquid" });
 
 		general.put("TELECOMUNICACAO", new String[] { "satélite", "telefone", "telegrafo", "onda eletromagnetica",
 				"amplitude modulada", "frequencia", "transmiss", "transmit", "converss", "tcp/ip", "telecomunicac" });
@@ -1109,7 +1170,8 @@ public class POCNLUProcessDiego {
 		general.put("TEMPO",
 				new String[] { "semana", "mês", "ano ", "década", "século", "passado", "presente", "futuro", "bimestr",
 						"trimestr", "semestr", "anual", "bienal", "contemporâ", "anterior", "posterior", "agora",
-						"depois", "efemero", "volatil", "rapido", "fugaz", "fugacid", "tempo" });
+						"depois", "efemero", "volatil", "rapido", "fugaz", "fugacid", "tempo", "minuto", "segundo",
+						"hora", "milisegundos" });
 
 		general.put("TERRENO",
 				new String[] { "areia", "terra", "rocha", "rochos", "sediment", "terreno", "geólogo", "geologi",
@@ -1121,29 +1183,7 @@ public class POCNLUProcessDiego {
 						"Golfe", " Beisebol ", "Hoquei", "Rugby", "Criquete", "Boxe", "Atletismo", "Natacao", "Futsal",
 						"Karate", "Judo", "Futevolei", "Ciclismo", "Boliche", "Xadrez", "Dama", "Jiu Jitsu" });
 
-		general.put("TIPOS_DOENCA", new String[] { "Clamídia", "Gonorreia", "HPV", "Herpes", "Tricomoníase", "Sífilis",
-				"AIDS", "Acne", "Afta", "Alergia", "Alzheimer", "Amebíase", "Anemia", "Anorexia", "Asma", "Bipolar",
-				"Bronquite", "Bronquite Aguda", "Brucelose", "Bruxismo", "Boca Seca", "Balanite", "Cálculo Renal",
-				"Cancro", "Carcinoma", "Cárie", "Catarata", "Câncer", "Cirrose hepática", "Cistite", "Clamídia",
-				"Cólera", "Colesterol", "Cólica abdominal", " Coma ", "Congestão nasal", "Conjutivite", "Crupe",
-				"Daltonismo", "Depressão", "Dermatite", "Desnutrição", "Diarreia", "Difteria", "Disfagia",
-				"Disfunção Eréctil", "Dor de dentes", "DST", "micose", "necrose", "hpv", "hiv", " asma", "atópic",
-				"atopia", "secreção", "BCG", "inteferon", "IFN-y", "hidrocefalia", "mielomeningocele",
-				"Ejaculação precoe", "Enxaqueca", "Epilepsia", "Esclerose", "Esquizofrenia", "Esofagite", "Apendicite",
-				"Fadiga crônica", "Febre", "Faringite", "Fibroma", "Flatulência", "Foliculite", "Frieira",
-				"Fotossensibilidade", "Galactosemia", "Gastrite", "Gengivite", "Gigantismo", "Glaucoma", "Glicemia",
-				"Gota", "Gravidez Ecóptica", "Gripe", "Halitose", "Hemanginoma", "Hematomacrose", "Hemofilia",
-				"Hemorróida", "Hepatite", "Hiperglicemia", "Hipertensão", "Hipertricose", "Hipertrofia", "Hipoglicemia",
-				"Infecção urinária", "Infertilidade", "Insolação", "Insónia", "Insuficiência cardíaca",
-				"Intolerância à lactose", "Intoxicação", "Lábio leporino", "Lalofobia", "Laringite", "Lúpus", "Malária",
-				"Melanoma", "Miocardi", "Miopia", "Morte Súbita Cardíaca", "Nanismo", "Náusea", "Neuropatia",
-				"Obesidade", "Obstipação", "Osteoartrose", "Osteoporose", "Osteopetrose", "Papeira", "Paranóia",
-				"Parkinson", "Piromania", "Pneumonia", "Queimadura Solar", "Queratose", "Resfriado", "Rinite",
-				"Rubéola", "Sarampo", "Tendinite", "Tétano", "Tetraplegia", "Tiroidite", "Tosse", "Trigliceridemida",
-				"Tuberculose", "Úlcera", "Urticária", "Varicela", "Varíola", "Variz", "Verruga", "Vigorexia", "VIH",
-				"Zumbido" });
-
-		general.put("TORAX", new String[] { " seio ", " mama ", "pulmão", "torax", "costas", "homoplata", "ombro",
+		general.put("TORAX", new String[] { " seio ", " mama ", "pulmão", "torax",  "homoplata", "ombro",
 				"peito", "pescoço" });
 
 		general.put("TRABALHO", new String[] { "trabalho", "atividade", "acao" });
@@ -1151,7 +1191,7 @@ public class POCNLUProcessDiego {
 		general.put("TRANSPORTE",
 				new String[] { "carro", "bicicl", "transport", "ferrovia", "marítimo", "aéreo", "nave", "naval",
 						"terrestre", "submarino", "barco", " bote ", "jangad", "caravela", "avião", "aeronave",
-						"helicóptero", " jato", "motorista", "piloto", "condutor", "aeroeapcial", "veículo", "rota",
+						"helicóptero", " jato", "piloto", "condutor", "aeroeapcial", "veículo", "rota",
 						"caminho", "trajeto", "viaj", "percurso", "corrida", " transpor ", "ultrapassa", "transit" });
 
 		general.put("TRANSPORTE_PUBLICO", new String[] { "metrô", "ônibus", "trem", "caminhão", "pau de arara",
@@ -1160,12 +1200,15 @@ public class POCNLUProcessDiego {
 		general.put("UNIDADES_MEDIDA",
 				new String[] { "m/s", "km/h", "kg", "m2", "m3", " wh ", " ah ", " hp ", "btu", "metro", "polegada",
 						"litro", " quilo", " mega", " nano", " pico", " zeta", " mili", " micro", "macro", "/ml", "%",
-						"mg/kg", "mg/l", "lpsf/gq", "d+lps=", "d/h" });
+						"mg/kg", "mg/l", "lpsf/gq", "d+lps=", "d/h", " km", " cm", " mm", " ml" });
 		general.put("UNIVERSO",
-				new String[] { "univers", "matéria", "dimens", "big bang", "matéria escura", "relativ", "quantic" });
+				new String[] { "univers", "matéria", "dimens", "big bang", "matéria escura", "relativ", });
 
-		general.put("URBANO", new String[] { "urbano", "urbanid", "espaços", "arquitet", "urbaniza", "cidade projetada",
-				"cidade inteligente", "licenciamento", "paisagis", "revitaliz", "suburb" });
+		general.put("URBANO",
+				new String[] { "espaços", "urbaniza", "cidade projetada",
+						"cidade inteligente", "licenciamento", "paisagis", "revitaliz", "suburb",
+						"capitais", "mobilidade", "urban", "lopole", "pólis", "periferia", "centro", "esgoto",
+						" coleta", "parque", "cotidian", "metropol"});
 
 		general.put("UTENSILIOS",
 				new String[] { " pote ", " copo ", "canec", "xicara", "balde", "barril", "tonel ", "frasco", " tubo ",
@@ -1176,7 +1219,7 @@ public class POCNLUProcessDiego {
 		general.put("VALORES",
 				new String[] { "valor", "ética", "moral", "princípio", "convic", "virtu", "hábito", "vício",
 						"etica profissional", "honest", "corrup", "desvio de verba", "desvio de campanha", "propina",
-						"escandalo", "ilicitu", " etico", "cartel", "carteis", "trust", "corromp", "fraud",
+						"escandalo", "ilicitu", " etico", "carteis", "trust", "corromp", "fraud",
 						"compra de voto", "venda de voto", " multa", "entidade", "instituic" });
 
 		general.put("VEGETACAO", new String[] { "floresta", "caatinga", "cerrado", "tundra", "savana", "taiga",
@@ -1188,18 +1231,18 @@ public class POCNLUProcessDiego {
 						" soprador " });
 
 		general.put("VERDADE",
-				new String[] { "certificado", "autent", "credencia", "certidão", "cartório", "tabeli", "veridic",
+				new String[] { "certificado", "autent", "certidão", "cartório", "tabeli", "veridic",
 						" puro ", "pureza", "mentira", "falso", "falsi", "engana", "engano", "equivoc", "histeri",
 						"art. 171", "verific", "pseudo" });
 
 		general.put("VESTUARIO",
-				new String[] { "camisa", "shorts", "sapat", "tênis", "cueca", "calça", "sutiã", "chapéu", "boné",
+				new String[] { "camisa", "shorts", "cueca", "calça", "sutiã", "chapéu", "boné",
 						" touca ", " meia ", "sandália", "camiseta", " terno ", "gravata", " meias ", "vesturario",
 						"roupas", "moda", "tecido", "mochila", "algodao", " seda ", "couro", "roupa sintetica",
 						"constur", "adorno", "veste", "vesturario", "vestiment", "camufla", "joias", "malhas" });
 
 		general.put("VIA_PUBLICA",
-				new String[] { "asfalto", "iluminação", "poste", "abrigo", "parada", "ponto de ", " via ", "semáforo",
+				new String[] { "asfalto", "iluminação", "poste", "parada", "ponto de ", " via ", "semáforo",
 						"rede elétrica", "distribuição", "lampada", "corredor de", "táxi", "viaduto", "praça" });
 
 		general.put("VIDA_FASE",
@@ -1219,15 +1262,16 @@ public class POCNLUProcessDiego {
 						"inspecao" });
 
 		general.put("VIOLENCIA",
-				new String[] { " briga", "raiva", "agreção", "agredir", "agress", "queixa", "violên", "confront",
+				new String[] { " briga", "agreção", "agredir", "agress", "queixa", "violên", "confront",
 						"espanca", "bater", " soco ", "chute", " golpe", " socar ", " pancada ", "matar", "assassina",
 						"estupr", "viola", "bulling", "forca fisica", "forca bruta", "cotovelada", "armlock", "leglock",
 						"mata leao", "ponta pe", "paulada", "acao contundente", "esfaque", "facada", "queixa policial",
 						"boletim de ocorrencia", "disk denuncia", "conflito armado", "bala perdida", "troca de tiro",
 						"maria da penha", "homicidio", "feminicidio", "suicidio", "crime violento", "crime barbaro",
 						"imoral", "gangue", "quadrilha", "crime organizado", "traficante", "trafico", "milicia",
-						"cartel", "comando vermelho", "faccao", "faccoes", "grupo de extermineo",
+						"comando vermelho", "faccao", "faccoes", "grupo de extermineo",
 						"grupos de extermineo" });
+		
 
 		// Tornando tudo minusculo
 		Map<String, String[]> generalAux = new TreeMap<String, String[]>();
@@ -1300,7 +1344,7 @@ public class POCNLUProcessDiego {
 					key = unaccent(key.toLowerCase());
 
 					boolean hasConcept = false;
-					int countThe = 0;
+					float countThe = 0;
 
 					for (String value : general.get(key)) {
 						value = unaccent(value);
@@ -1322,6 +1366,7 @@ public class POCNLUProcessDiego {
 					}
 					if (hasConcept) {
 						line.append(";" + countThe);
+//						line.append(";" + (countThe / txt.split(" ").length));
 //						line.append(";1");
 					} else {
 						line.append(";0");
